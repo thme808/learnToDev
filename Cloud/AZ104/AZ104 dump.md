@@ -134,7 +134,7 @@ Which PowerShell cmdlets should you use?
 Your company has an Azure subscription that includes a number of Azure virtual machines (VMs), which are all part of the same virtual network.
 Your company also has an on-premises Hyper-V server that hosts a VM, named VM1, which must be replicated to Azure.
 Which of the following objects that must be created to achieve this goal? 
-![](AZ104%20dump/FF604C05-80CA-4F62-BA72-CE6322278FD3%203.png)
+![](AZ104%20dump/FF604C05-80CA-4F62-BA72-CE6322278FD3%204.png)
 
 ## Topic1/Question24
 Your company’s Azure subscription includes two Azure networks named VirtualNetworkA and VirtualNetworkB.
@@ -168,9 +168,11 @@ You need to configure an Azure internal load balancer as a listener for the avai
 - You enable Floating IP✔️
 - You set Session persistence to Client IP
 
-- Session persistence: a Azure term for sticky session, 클라이언트가 was1 에 처음 요청받으면 계속 was1로 받도록 유도하는 LB rule.
-- floating IP: a Azure term for Direct Server Return.
-	- LB뒤에 있는 노드(보통 db)가 클라이언트로 직접 응답하여 LB부하를 분산함. db가 여러개 구성되어 alwalys on availity option이 활성화된 경우 사용 됨. 웹요청 시 실제 클라이언트와 직접 통신은 보안에 위배 되므로 주의.
+**Concepts explained**
+ - Session persistence: a Azure term for sticky session, 클라이언트가 was1 에 처음 요청받으면 계속 was1로 받도록 유도하는 LB rule.
+ - floating IP: 
+	 - a Azure term for Direct Server Return.
+	- LB뒤에 있는 노드(보통 db)가 클라이언트로 직접 응답하여 LB부하를 분산함. db가 여러개 구성되어 LB가 요청을 분산하는 경우 **listener를 두어 살아있는 db로 요청을 보내야 완결된 부하 분산**이라 할 수 있음. 각 vm이 고정된 내부아이피를 사용해야 listener가 각 서버의 heath check을 할 수 있음. 웹요청 시 실제 클라이언트와 직접 통신은 보안에 위배 되므로 주의.
 > By enabling Floating IP, the load balancer will use a floating IP address as the source IP address for outbound flows from the backend pool. This will ensure that the **IP address used by the backend pool remains the same even if a VM is restarted or replaced**, which is important for maintaining the listener for the availability group.  
 
 ## Topic1/Question31
@@ -191,8 +193,9 @@ Which of the following is the least amount of network interfaces needed for this
 * B. 10
 * C. 20
 * D. 40
+
 Which of the following is the least amount of security groups needed for this configuration? 
-1, one Network Security Group(NSR) can be assigned to multiple vm.
+> 1, one Network Security Group(NSR) can be assigned to multiple vm.  
 
 ## Topic1/Question34
 Your company’s Azure subscription includes Azure virtual machines (VMs) that run Windows Server 2016.
@@ -241,7 +244,7 @@ You have an Azure subscription named Subscription1 that contains a resource grou
 In RG1, you create an internal load balancer named LB1 and a public load balancer named LB2.
 You need to ensure that an administrator named Admin1 can manage LB1 and LB2. The solution must follow **the principle of least privilege**.
 Which role should you assign to Admin1 for each task? To answer, select the appropriate options in the answer area.
-![](AZ104%20dump/932E9687-C584-465F-975B-7C0AF92038FE%203.png)
+![](AZ104%20dump/932E9687-C584-465F-975B-7C0AF92038FE%204.png)
 -  LB와 backend pool(vm)에 모두에 접근 가능해야함 -> network contributor 역할이**RG level에 할당되어야** 함.
 - health probe도 RG레벨에서 접근가능 함
 
@@ -273,29 +276,29 @@ Which two groups should you create?
 
 ## Topic2/Question4
 You have an Azure Active Directory (Azure AD) tenant named contoso.com that contains the users shown in the following table:
-![](AZ104%20dump/2308337E-C9E6-4B32-BD5C-3E793D1127B2%203.png)
+![](AZ104%20dump/2308337E-C9E6-4B32-BD5C-3E793D1127B2%204.png)
 — User3 is the owner of Group1. Group2 is a member of Group1.
 You configure an access review named Review1 as shown in the following exhibit:
-![](AZ104%20dump/0F12E6E8-16D7-425C-A8CE-48EDB46105FC%203.png)
+![](AZ104%20dump/0F12E6E8-16D7-425C-A8CE-48EDB46105FC%204.png)
 
 - note that scope is **Guest users only**
 - Reviewers are **Group Owners**
-![](AZ104%20dump/D85F0920-784C-4CD3-BC73-9838CE863B03%203.png)
+![](AZ104%20dump/D85F0920-784C-4CD3-BC73-9838CE863B03%204.png)
 - NNN
 
 ## Topic2/Question5
 You have the Azure management groups shown in the following table:
-![](AZ104%20dump/55047A69-41C7-425A-9B03-F246EF630DFD%203.png)
+![](AZ104%20dump/55047A69-41C7-425A-9B03-F246EF630DFD%204.png)
 You add Azure subscriptions to the management groups as shown in the following table:
-![](AZ104%20dump/F70CC2E5-9178-45DE-8F7C-62709DE0205C%203.png)
+![](AZ104%20dump/F70CC2E5-9178-45DE-8F7C-62709DE0205C%204.png)
 You create the Azure policies shown in the following table:
-![](AZ104%20dump/DFE52F83-147F-4D4A-8F36-8D4706FFECFE%203.png)
+![](AZ104%20dump/DFE52F83-147F-4D4A-8F36-8D4706FFECFE%204.png)
 
-![](AZ104%20dump/37214963-CFB4-41CD-9CA4-1B97A6439BA5%203.png)
+![](AZ104%20dump/37214963-CFB4-41CD-9CA4-1B97A6439BA5%204.png)
 - NNN
 
 ## Topic2/Question6
-![](AZ104%20dump/F5450418-1B5B-4532-98F4-4ACF92F13D2E%203.png)
+![](AZ104%20dump/F5450418-1B5B-4532-98F4-4ACF92F13D2E%204.png)
 What is the effect of the policy?
 * A. You are prevented from creating Azure SQL servers anywhere in Subscription 1.
 * B. You can create Azure SQL servers in ContosoRG1 only.
@@ -303,15 +306,15 @@ What is the effect of the policy?
 * D. You can create Azure SQL servers in any resource group within Subscription 1.
 
 ## Topic2/Question7
-![](AZ104%20dump/6D2ED933-CF06-4766-A5CB-AE748A2E36FA%203.png)
+![](AZ104%20dump/6D2ED933-CF06-4766-A5CB-AE748A2E36FA%204.png)
 - Apply tag and its default value -> Append a tag and its value to resources
 - Policy 적용 후에는 tag를 지정하더라도 default tag가 붙음 (아래 VNET3)
 - Policy 적용 전 생성된 VNET1은 remediation 해야 default tag 붙음
-![](AZ104%20dump/488C37F4-0892-4C86-95E2-DBCFF1C2C7FD%203.png)
+![](AZ104%20dump/488C37F4-0892-4C86-95E2-DBCFF1C2C7FD%204.png)
 
 ## Topic2/Question8
 You have an Azure subscription named AZPT1 that contains the resources shown in the following table:
-![](AZ104%20dump/0004900001%203.png)
+![](AZ104%20dump/0004900001%204.png)
 
 You create a new Azure subscription named AZPT2.
 You need to identify which resources can be moved to AZPT2.
@@ -369,13 +372,15 @@ What should you configure in Azure AD?
 
 ## Topic2/Question14
 You have Azure Active Directory tenant named Contoso.com that includes following users:
-![](AZ104%20dump/C3C235A1-CB81-480A-AF21-7DDFCC96DE37.png)
-Contoso.com includes following Windows 10 devices:
-![](AZ104%20dump/96CF65F9-EBB3-4259-AF0E-6EF06BC0EB4D.png)
-You create following security groups in Contoso.com:
-![](AZ104%20dump/9A03B30A-E6B9-4F07-8B70-852ECF5D9422.png)
+![](AZ104%20dump/C3C235A1-CB81-480A-AF21-7DDFCC96DE37%202.png)
 
-![](AZ104%20dump/EB998EAA-3251-4030-931B-05AE86C2ABF9.png)
+Contoso.com includes following Windows 10 devices:
+![](AZ104%20dump/96CF65F9-EBB3-4259-AF0E-6EF06BC0EB4D%202.png)
+
+You create following security groups in Contoso.com:
+![](AZ104%20dump/9A03B30A-E6B9-4F07-8B70-852ECF5D9422%202.png)
+
+![](AZ104%20dump/EB998EAA-3251-4030-931B-05AE86C2ABF9%202.png)
 - NYN
 
 > As a global administrator or cloud device administrator, you can manage the registered or joined devices. User administrator can manage users but not devices.  
@@ -389,7 +394,7 @@ You create following security groups in Contoso.com:
 ## Topic2/Question15
 You have an Azure subscription that contains a resource group named RG26.
 RG26 is set to the West Europe location and is used to create temporary resources for a project. RG26 contains the resources shown in the following table.
-![](AZ104%20dump/F1244E34-05CD-4575-9F73-F081F6C7F003.png)
+![](AZ104%20dump/F1244E34-05CD-4575-9F73-F081F6C7F003%202.png)
 SQLDB01 is backed up to RGV1.
 When the project is complete, you attempt to delete RG26 from the Azure portal. The deletion fails.
 You need to delete RG26.
@@ -399,7 +404,7 @@ What should you do first?
 * C. Stop the backup of SQLDB01 ✔️
 * D. Delete sa001 
 
-![](AZ104%20dump/D9875E7F-3AF1-4F6D-A4A3-35FDAE16E603.png)
+![](AZ104%20dump/D9875E7F-3AF1-4F6D-A4A3-35FDAE16E603%202.png)
 
 ## Topic2/Question16
 You have an Azure subscription named Subscription1 that contains a virtual network named VNet1. VNet1 is in a resource group named RG1.
@@ -418,7 +423,7 @@ What should you do?
 > **Network Contributor** lets you manage networks, but not access to them. Users assigned the Network contributor role can configure and manage network-related resources but do not have access to other Azure resources outside the networking scope.  
 
 > **User Access Administrator** lets you manage user access to Azure resources. By default, only users with the `Owner` or `User Access Administrator` roles can assign roles  to others.  
-![](AZ104%20dump/9EB1DFE4-B3B7-4482-BB4B-74036F5B9521.png)
+![](AZ104%20dump/9EB1DFE4-B3B7-4482-BB4B-74036F5B9521%202.png)
 
 ## Topic2/Question17
 You have an Azure Active Directory (Azure AD) tenant named contosocloud.onmicrosoft.com.
@@ -433,16 +438,129 @@ Which type of DNS record should you create?
 
 > menu: Azure portal > Microsoft Entra ID > Custom domain names  
 > you can see that **TXT and MX are available options for DNS record type**.  
-![](AZ104%20dump/BCD4F844-1F4C-4B60-BC10-8F6074014D49.png)
+![](AZ104%20dump/BCD4F844-1F4C-4B60-BC10-8F6074014D49%202.png)
 
 ## Topic2/Question18
 You have an Azure Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1. Adatum contains a group named Developers.
 Subscription1 contains a resource group named Dev.
 You need to provide the Developers group with the ability to create Azure logic apps in the Dev resource group.
-Solution: On Subscription1, you assign the DevTest Labs User role to the Developers group.
-Does this meet the goal? 
-- No
+
+- On Subscription1, you assign the DevTest Labs User role to the Developers 
+- On Subscription1, you assign the Logic App Operator role to the Developers group.
+- On Dev, you assign the Contributor role to the Developers group  ✔️
 
 > DevTest Labs User role only lets you connect, start, restart, and shutdown virtual machines in your Azure DevTest Labs. The Logic App Contributor role lets you manage logic app, but not access to them. It provides access to view, edit, and update a logic app.  
 
+## Topic2/Question21
+You have an Azure subscription that is used by four departments in your company. The subscription contains 10 resource groups. **Each department uses resources in several resource groups**.
+You need to send a report to the finance department. **The report must detail the costs for each department.**
+Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.
+Select and Place:
+![](AZ104%20dump/F374E9C4-8A01-4691-AE37-195CC7CAFD46.png)
 
+## Topic2/Question22
+You have an Azure subscription named Subscription1 that contains an Azure Log Analytics workspace named Workspace1.
+You need to view the error events from a table named Event.
+Which query should you run in Workspace1?
+* A. Get-Event Event | where {$_.EventType == “error”}
+* B. search in (Event) “error” ✔️
+* C. select * from Event where EventType == “error”
+* D. search in (Event) * | where EventType -eq “error”
+
+> Kusto Query Language (KQL) is Log Analytics query language.  
+> options D seems to have similar syntax to KQL, but can be corrected to  `search in (Event) * | where EventType == "error"`  
+
+## Topic2/Question23
+You have an Azure subscription that contains a virtual network named VNET1 in the East US 2 region. A network interface named VM1-NI is connected to VNET1.
+You **successfully deployed** the following Azure Resource Manager template.
+![](AZ104%20dump/133026EC-CB2C-4D64-BBAE-8A4FAE963F36.png)
+
+![](AZ104%20dump/918353B4-5544-499D-9808-8B6D2143AF10.png)
+
+## Topic2/Question24
+You have an Azure subscription named Subscription1. Subscription1 contains the resource groups in the following table.
+![](AZ104%20dump/92A2D270-3117-49FA-AC07-6F4265CD4673.png)
+
+RG1 has a web app named WebApp1. WebApp1 is located in West Europe.
+You move WebApp1 to RG2.
+What is the effect of the move?
+* A. The App Service plan for WebApp1 remains in West Europe. Policy2 applies to WebApp1. ✔️
+* B. The App Service plan for WebApp1 moves to North Europe. Policy2 applies to WebApp1.
+* C. The App Service plan for WebApp1 remains in West Europe. Policy1 applies to WebApp1.
+* D. The App Service plan for WebApp1 moves to North Europe. Policy1 applies to WebApp1.
+
+## Topic2/Question25
+You have an Azure subscription named Subscription1 that has a subscription ID of c276fc76-9cd4-44c9-99a7-4fd71546436e.
+You need to **create a custom RBAC role named CR1** that meets the following requirements:
+- ✑ Can be assigned only to the resource groups in Subscription1
+- ✑ Prevents the management of the access permissions for the resource groups
+- ✑ Allows the viewing, creating, modifying, and deleting of resources within the resource groups
+What should you specify in the assignable scopes and the permission elements of the definition of CR1? To answer, select the appropriate options in the answer area.
+[음악](file:///Users/thme808/Downloads/음악) ![](AZ104%20dump/3A0B61AD-708B-49DB-A9C4-CD3CD04878B9.png)
+- answers: second one, first one
+
+> you cannot wildcard all of them using /resourceGroups. RG name need be specified and even then applies to one particular RG  
+
+## Topic2/Question26
+Users access the resources in the subscription from either home or from customer sites. From home, users must establish a **point-to-site VPN** to access the Azure resources. The users on the customer sites access the Azure resources by using **site-to-site VPNs**.
+You have a line-of-business-app named App1 that runs on several Azure virtual machine. The virtual machines run Windows Server 2016.
+You need to ensure that the connections to App1 are spread across all the virtual machines.
+What are **two possible Azure services** that you can use? Each correct answer presents a complete solution.
+* A. an internal load balancer ✔️
+* B. a public load balancer
+* C. an Azure Content Delivery Network (CDN)
+* D. Traffic Manager
+* E. an Azure Application Gateway ✔️
+
+> A: The customer sites are connected through VPNs, so an internal load balancer is enough.   
+>   
+> B: The customer sites are connected through VPNs, so there’s no need for a public load balancer, an internal load balancer is enough.  
+>   
+> C: A CDN does not provide load balancing for applications, so it not relevant for this situation.  
+>   
+> D: Traffic manager is a DNS based solution to direct users’ requests to the nearest (typically) instance and does not provide load balancing for this situation.  
+>   
+> E: Azure Application Gateway is a valid option, as it provides load balancing in addition to routing and security functions  
+
+## Topic2/Question27
+You have 100 Azure virtual machines.
+You need to quickly identify underutilized virtual machines that can have their service tier changed to a less expensive offering.
+Which blade should you use?
+* A. Monitor
+* B. Advisor ✔️
+* C. Metrics
+* D. Customer insights
+
+> Advisor helps you optimize and reduce your overall Azure spend by identifying idle and underutilized resources. You can get cost recommendations from the Cost tab on the Advisor dashboard.  
+
+## Topic2/Question28
+You have an Azure Active Directory (Azure AD) tenant.
+You need to create a conditional access policy that requires all users to use multi-factor authentication when they access the Azure portal.
+Which **three** settings should you configure? To answer, select the appropriate settings in the answer area.
+![](AZ104%20dump/D4ED7406-A7FC-46C1-8C0F-69F05A5833A7.png)
+
+
+> — Select Users & Groups : Where you have to choose all users.  
+> — Select Cloud apps or actions: to specify the Azure portal  
+> — Grant: to grant the MFA.  
+
+## Topic2/Question29
+You have an Azure Active Directory (Azure AD) tenant named contoso.onmicrosoft.com. The User administrator role is assigned to a user named Admin1. An external partner has a Microsoft account that uses the user1@outlook.com sign in.
+Admin1 attempts to invite the external partner to sign in to the Azure AD tenant and receives the following error message: `Unable to invite user user1@outlook.com. Generic authorization exception.`
+You need to ensure that Admin1 can invite the external partner to sign in to the Azure AD tenant.
+What should you do?
+* A. From the Users settings blade, modify the External collaboration settings. ✔️
+* B. From the Custom domain names blade, add a custom domain.
+* C. From the Organizational relationships blade, add an identity provider.
+* D. From the Roles and administrators blade, assign the Security administrator role to Admin1.
+
+## Topic2/Question30 
+You have an Azure subscription linked to an Azure Active Directory tenant. The tenant includes a user account named User1.
+You need to ensure that User1 can assign a policy to the tenant root management group. What should you do?
+* A. Assign the Owner role for the Azure Subscription to User1, and then modify the default conditional access policies.
+* B. Assign the Owner role for the Azure subscription to User1, and then instruct User1 to configure access management for Azure resources.
+* C. Assign the Global administrator role to User1, and then instruct User1 to configure access management for Azure resources. ✔️
+* D. Create a new management group and delegate User1 as the owner of the new management group.
+> B or C???  
+
+![](AZ104%20dump/468DC18D-D929-43C4-9C47-B5E6232C166D.png)
