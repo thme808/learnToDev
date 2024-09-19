@@ -9,31 +9,31 @@ You want to associate each VM with its respective department.
 What should you do?
 * A. Create Azure Management Groups for each department.
 * B. Create a resource group for each department.
-* **C. Assign tags to the virtual machines.**
-* D. Modify the settings of the virtual mac≠hines.
+* C. Assign tags to the virtual machines. ✔️
+* D. Modify the settings of the virtual machine.
 
 ## Topic1/Question3
 Your company has an Azure Active Directory (Azure AD) subscription.
 You want to implement an Azure AD conditional access policy.
 The policy must be configured to require members of the Global Administrators group to use Multi-Factor Authentication and an Azure AD-joined device when they connect to Azure AD from untrusted locations.
 
-> Solution: **You access the Azure portal to alter the grant control of the Azure AD conditional access policy.**  
+- Solution: You access the Azure portal to alter the **grant control** of the Azure AD conditional access policy.
 
 ## Topic1/Question5
 Your company’s Azure solution makes use of Multi-Factor Authentication for when users are not in the office. The Per Authentication option has been configured as the usage model.
 After the acquisition of a smaller business and the addition of the new staff to Azure Active Directory (Azure AD) obtains a different company and adding the new employees to Azure Active Directory (Azure AD), you are informed that these employees should also make use of Multi-Factor Authentication.
 To achieve this, the Per Enabled User setting must be set for the usage model.
 
-> Solution: You **create a new Multi-Factor Authentication provider** with a backup from the existing Multi-Factor Authentication provider data.  
+- Solution: You **create a new Multi-Factor Authentication provider** with a backup from the existing Multi-Factor Authentication provider data.
 
 ## Topic1/Question9
 Your company has an Azure Active Directory (Azure AD) tenant named weyland.com that is configured for hybrid coexistence with the on-premises Active Directory domain.
 You have a server named DirSync1 that is configured as a DirSync server.
 You create a new user account in the on-premise Active Directory. You now need to replicate the user information to Azure AD immediately.
 
-> Solution: You run the Start-ADSyncSyncCycle -PolicyType Delta PowerShell cmdlet.    
-- delta, initial 둘 다 가능하지만, 신규 유저 즉시 반영이 목적이라면 delta 가 더 적합함
+- Solution: You run the **Start-ADSyncSyncCycle -PolicyType Delta** PowerShell cmdlet.  
 
+> delta, initial 둘 다 가능하지만, 신규 유저 즉시 반영이 목적이라면 delta 가 더 적합함  
 > The Start-ADSyncSyncCycle cmdlet has two policy types:  
 > — Delta: This policy type performs a delta (or incremental) synchronization, syncing only the changes since the last sync.  
 > — Initial: This policy type performs a **full synchronization**, syncing all objects and attributes.  
@@ -57,27 +57,26 @@ Which of the following Azure stored redundancy options should you recommend?
 Your company has an azure subscription that includes a storage account, a resource group, a blob container and a file share.
 A colleague named Jon Ross makes use of a solitary Azure Resource Manager (ARM) template to deploy a virtual machine and an additional Azure Storage account. You want to review the ARM template that was used by Jon Ross.
 
-> Solution: You access the Resource Group blade.  
-	- blade 는 그냥 메뉴같은 것. 
-	- Resource Group 메뉴/블레이드 -> Deployments 접속해서 ARM 템플릿을 확인할 수 있음
+- Solution: You access the Resource Group blade.
+
+> blade 는 그냥 메뉴같은 것.   
+> Resource Group 메뉴/블레이드 -> Deployments 접속해서 ARM 템플릿을 확인할 수 있음  
 
 ## Topic1/Question16 #availabilitySet
 Your company has three virtual machines (VMs) that are included in an **availability set**. You try to resize one of the VMs, which returns an allocation failure message. It is imperative that the VM is resized.
 Which of the following actions should you take?
 * A. You should only stop one of the VMs.
 * B. You should stop two of the VMs.
-* **C. You should stop all three VMs.**
+* C. You should stop all three VMs. ✔️
 * D. You should remove the necessary VM from the availability set.
 
 ## Topic1/Question17 
 You have an Azure virtual machine (VM) that has a single data disk. You have been tasked with attaching this data disk to another Azure VM.
 You need to make sure that your strategy allows for the virtual machines to be offline for the least amount of time possible.
 Which of the following is the **action you should take FIRST**?
-
 * A. Stop the VM that includes the data disk.
 * B. Stop the VM that the data disk must be attached to.
-* C. Detach the data disk. **Most Voted**
-	*  It is possible to hot swap the disk, but it is not a best practice
+* C. Detach the data disk. ✔️
 * D. Delete the VM that includes the data disk.
 
 ## Topic1/Question18
@@ -87,15 +86,16 @@ Which of the following is the value that you should configure for the **platform
 * A. 10
 * B. 30
 * C. Min Value
-* D. Max Value **Most Voted**
+* D. Max Value ✔️
 
 ## Topic1/Question19
 Which of the following is the value that you should configure for the **platformUpdateDomainCount** property?
 * A. 10
-* B. 20 **Most Voted**
+* B. 20 ✔️
 * C. 30
 * D. 40
-> Each virtual machine in your availability set is assigned an update domain and a fault domain by the underlying Azure platform. Each availability set can be configured with up to three fault domains and twenty update domains.  
+
+> Each virtual machine in your availability set is assigned an update domain and a fault domain by the underlying Azure platform. Each availability set can be configured with **up to three fault domains and twenty update domains**.  
 
 ## Topic1/Question20
 You have downloaded an Azure Resource Manager (ARM) template to deploy numerous virtual machines (VMs). The ARM template is based on a current VM, but must be adapted to reference an administrative password.
@@ -103,8 +103,9 @@ You need to make sure that the password cannot be stored in plain text.
 You are preparing to create the necessary components to achieve your goal.
 Which of the following should you create to achieve your goal? Answer by dragging the correct option from the list to the answer area.
 Select and Place:
-> **answers: Key vault + access policy**  
-	- Azure key vault to store the password and Access policy to make it accessible. access policy is considered a legacy way to provide access to the key vault. Now you can use RBAC.
+- **answers: Key vault + access policy**
+
+> Azure key vault to store the password and Access policy to make it accessible. access policy is considered a legacy way to provide access to the key vault. Now you can use RBAC.  
 
 ## Topic1/Question21
 Your company has an Azure Active Directory (Azure AD) tenant that is configured for hybrid coexistence with the on-premises Active Directory domain.
@@ -112,8 +113,8 @@ The on-premise virtual environment consists of virtual machines (VMs) running on
 You have created some PowerShell scripts to automate the configuration of newly created VMs. You plan to create several new VMs.
 You need a solution that ensures the scripts are run on the new VMs.
 Which of the following is the best solution?
-* A. Configure a SetupComplete.cmd batch file in the %windir%\setup\scripts directory.**Most Voted**
-	* windows 부팅시 윈도우 화면 접속 전에 스크립트 실행 됨
+
+* A. Configure a SetupComplete.cmd batch file in the %windir%\setup\scripts directory. ✔️	(* windows 부팅시 윈도우 화면 접속 전에 스크립트 실행 됨)
 * B. Configure a Group Policy Object (GPO) to run the scripts as logon scripts.
 * C. Configure a Group Policy Object (GPO) to run the scripts as startup scripts.
 * D. Place the scripts in a new virtual hard disk (VHD).
@@ -125,26 +126,26 @@ You configure a reference VM in the on-premise virtual environment. You then gen
 You need to upload the image to Azure to ensure that it is available for selection when you create the new Azure VMs.
 Which PowerShell cmdlets should you use?
 * A. Add-AzVM
-* B. Add-AzVhd **Most Voted**
-	* The Add-AzVhd cmdlet uploads on-premises virtual hard disks, in .vhd file format, to a blob storage account as fixed virtual hard disks.
+* B. Add-AzVhd ✔️	
 * C. Add-AzImage
 * D. Add-AzImageDataDisk
+
+> The Add-AzVhd cmdlet uploads on-premises virtual hard disks, in .vhd file format, to a blob storage account as fixed virtual hard disks.  
 
 ## Topic1/Question23
 Your company has an Azure subscription that includes a number of Azure virtual machines (VMs), which are all part of the same virtual network.
 Your company also has an on-premises Hyper-V server that hosts a VM, named VM1, which must be replicated to Azure.
 Which of the following objects that must be created to achieve this goal? 
-![](AZ104%20dump/FF604C05-80CA-4F62-BA72-CE6322278FD3%204.png)
+![](AZ104%20dump/FF604C05-80CA-4F62-BA72-CE6322278FD3%205.png)
 
 ## Topic1/Question24
 Your company’s Azure subscription includes two Azure networks named VirtualNetworkA and VirtualNetworkB.
 VirtualNetworkA includes a VPN gateway that is configured to make use of static routing. Also, a site-to-site VPN connection exists between your company’s on- premises network and VirtualNetworkA.
 You have configured a point-to-site VPN connection to VirtualNetworkA from a workstation running Windows 10. After configuring virtual network peering between VirtualNetworkA and VirtualNetworkB, you confirm that you are able to access VirtualNetworkB from the company’s on-premises network. However, you find that you cannot establish a connection to VirtualNetworkB from the Windows 10 workstation.
 You have to make sure that a connection to VirtualNetworkB can be established from the Windows 10 workstation.
-
 - You choose the Allow gateway transit setting on VirtualNetworkA.
 - You choose the Allow gateway transit setting on VirtualNetworkB.
-- **You download and re-install the VPN client configuration package on the Windows 10 workstation.**
+- You download and re-install the VPN client configuration package on the Windows 10 workstation. ✔️
 
 > 네트워크 topology가 변경되면 vpn을 재설치해야 함  
 > After configuring virtual network peering between VirtualNetworkA and VirtualNetworkB, you confirm that you are able to access VirtualNetworkB from the company’s on-premises network.” This indicates the Allow/Use gateway transit is set up working. The next step will be restart/reinstall the VPN-Client config at the windows 10 workstation.  
@@ -156,23 +157,20 @@ You need to provide access for the remote workers.
 What should you do?
 * A. Configure a Site-to-Site (S2S) VPN.
 * B. Configure a VNet-toVNet VPN.
-* C. Configure a Point-to-Site (P2S) VPN. **Most Voted**
+* C. Configure a Point-to-Site (P2S) VPN. ✔️
 * D. Configure DirectAccess on a Windows Server 2012 server VM.
 * E. Configure a Multi-Site VPN
 
 ## Topic1/Question28
 Your company has a Microsoft SQL Server Always On availability group configured on their Azure virtual machines (VMs).
 You need to configure an Azure internal load balancer as a listener for the availability group.
-
 - You create an HTTP health probe on port 1433.
-- You enable Floating IP✔️
+- You enable Floating IP ✔️
 - You set Session persistence to Client IP
 
-**Concepts explained**
- - Session persistence: a Azure term for sticky session, 클라이언트가 was1 에 처음 요청받으면 계속 was1로 받도록 유도하는 LB rule.
- - floating IP: 
-	 - a Azure term for Direct Server Return.
-	- LB뒤에 있는 노드(보통 db)가 클라이언트로 직접 응답하여 LB부하를 분산함. db가 여러개 구성되어 LB가 요청을 분산하는 경우 **listener를 두어 살아있는 db로 요청을 보내야 완결된 부하 분산**이라 할 수 있음. 각 vm이 고정된 내부아이피를 사용해야 listener가 각 서버의 heath check을 할 수 있음. 웹요청 시 실제 클라이언트와 직접 통신은 보안에 위배 되므로 주의.
+> — **Session persistence**: a Azure term for sticky session, 클라이언트가 was1 에 처음 요청받으면 계속 was1로 받도록 유도하는 LB rule.  
+> — **floating IP**:  a Azure term for Direct Server Return. LB뒤에 있는 노드(보통 db)가 클라이언트로 직접 응답하여 LB부하를 분산함. db가 여러개 구성되어 LB가 요청을 분산하는 경우 **listener를 두어 살아있는 db로 요청을 보내야 완결된 부하 분산**이라 할 수 있음. 각 vm이 고정된 내부아이피를 사용해야 listener가 각 서버의 heath check을 할 수 있음. 웹요청 시 실제 클라이언트와 직접 통신은 보안에 위배 되므로 주의.  
+>   
 > By enabling Floating IP, the load balancer will use a floating IP address as the source IP address for outbound flows from the backend pool. This will ensure that the **IP address used by the backend pool remains the same even if a VM is restarted or replaced**, which is important for maintaining the listener for the availability group.  
 
 ## Topic1/Question31
@@ -195,7 +193,7 @@ Which of the following is the least amount of network interfaces needed for this
 * D. 40
 
 Which of the following is the least amount of security groups needed for this configuration? 
-> 1, one Network Security Group(NSR) can be assigned to multiple vm.  
+- 1, one Network Security Group(NSR) can be assigned to multiple vm.
 
 ## Topic1/Question34
 Your company’s Azure subscription includes Azure virtual machines (VMs) that run Windows Server 2016.
@@ -212,7 +210,6 @@ When the VM becomes infected with data encrypting ransomware, you decide to reco
 * B. You should restore the VM to any VM within the company’s subscription.
 * C. You should restore the VM to a new Azure VM. ✔️
 * D. You should restore the VM to an on-premise Windows device.
-
 
 ## Topic1/Question36
 You administer a solution in Azure that is currently having performance issues.
@@ -237,16 +234,19 @@ Which of the following VMs can you back up? Choose all that apply.
 You have an Azure Active Directory (Azure AD) tenant named contoso.com.
 You have a CSV file that contains the names and email addresses of 500 external users.
 You need to create a guest user account in contoso.com for each of the 500 external users.
-**Solution: You create a PowerShell script that runs the New-AzureADMSInvitation cmdlet for each external user.**
+
+- Solution: You create a PowerShell script that runs the **New-AzureADMSInvitation** cmdlet for each external user.
 
 ## Topic2/Question1
 You have an Azure subscription named Subscription1 that contains a resource group named RG1.
 In RG1, you create an internal load balancer named LB1 and a public load balancer named LB2.
 You need to ensure that an administrator named Admin1 can manage LB1 and LB2. The solution must follow **the principle of least privilege**.
 Which role should you assign to Admin1 for each task? To answer, select the appropriate options in the answer area.
-![](AZ104%20dump/932E9687-C584-465F-975B-7C0AF92038FE%204.png)
--  LB와 backend pool(vm)에 모두에 접근 가능해야함 -> network contributor 역할이**RG level에 할당되어야** 함.
-- health probe도 RG레벨에서 접근가능 함
+![](AZ104%20dump/932E9687-C584-465F-975B-7C0AF92038FE%205.png)
+- third one, third one
+
+> LB와 backend pool(vm)에 모두에 접근 가능해야함 -> network contributor 역할이**RG level에 할당되어야** 함.   
+> health probe도 RG레벨에서 접근가능 함  
 
 > Network Contributor lets you manage networks, but not access to them.  
 > Users assigned the Network contributor role can configure and manage network-related resources but do not have access to other Azure resources outside the networking scope.  
@@ -258,10 +258,11 @@ You need to ensure that access to AKS1 can be granted to the contoso.com users.
 What should you do first?
 * A. From contoso.com, modify the Organization relationships settings.
 * B. From contoso.com, create an OAuth 2.0 authorization endpoint. ✔️
-	* 쿠버네티스 접근을 위한 토큰이 생성되어야 함
-	* AKS now supports direct integration with Azure AD, the method using OAuth 2.0 is considered legacy
 * C. Recreate AKS1.
 * D. From AKS1, create a namespace.
+
+> 쿠버네티스 접근을 위한 토큰이 생성되어야 함  
+> AKS now supports direct integration with Azure AD, the method using OAuth 2.0 is considered legacy  
 
 ## Topic2/Question3
 You have a Microsoft 365 tenant and an Azure Active Directory (Azure AD) tenant named contoso.com.
@@ -276,29 +277,29 @@ Which two groups should you create?
 
 ## Topic2/Question4
 You have an Azure Active Directory (Azure AD) tenant named contoso.com that contains the users shown in the following table:
-![](AZ104%20dump/2308337E-C9E6-4B32-BD5C-3E793D1127B2%204.png)
+![](AZ104%20dump/2308337E-C9E6-4B32-BD5C-3E793D1127B2%205.png)
 — User3 is the owner of Group1. Group2 is a member of Group1.
 You configure an access review named Review1 as shown in the following exhibit:
-![](AZ104%20dump/0F12E6E8-16D7-425C-A8CE-48EDB46105FC%204.png)
+![](AZ104%20dump/0F12E6E8-16D7-425C-A8CE-48EDB46105FC%205.png)
 
-- note that scope is **Guest users only**
-- Reviewers are **Group Owners**
-![](AZ104%20dump/D85F0920-784C-4CD3-BC73-9838CE863B03%204.png)
+![](AZ104%20dump/D85F0920-784C-4CD3-BC73-9838CE863B03%205.png)
 - NNN
+
+> note that scope is **Guest users only**. Reviewers are **Group Owners**  
 
 ## Topic2/Question5
 You have the Azure management groups shown in the following table:
-![](AZ104%20dump/55047A69-41C7-425A-9B03-F246EF630DFD%204.png)
+![](AZ104%20dump/55047A69-41C7-425A-9B03-F246EF630DFD%205.png)
 You add Azure subscriptions to the management groups as shown in the following table:
-![](AZ104%20dump/F70CC2E5-9178-45DE-8F7C-62709DE0205C%204.png)
+![](AZ104%20dump/F70CC2E5-9178-45DE-8F7C-62709DE0205C%205.png)
 You create the Azure policies shown in the following table:
-![](AZ104%20dump/DFE52F83-147F-4D4A-8F36-8D4706FFECFE%204.png)
+![](AZ104%20dump/DFE52F83-147F-4D4A-8F36-8D4706FFECFE%205.png)
 
-![](AZ104%20dump/37214963-CFB4-41CD-9CA4-1B97A6439BA5%204.png)
+![](AZ104%20dump/37214963-CFB4-41CD-9CA4-1B97A6439BA5%205.png)
 - NNN
 
 ## Topic2/Question6
-![](AZ104%20dump/F5450418-1B5B-4532-98F4-4ACF92F13D2E%204.png)
+![](AZ104%20dump/F5450418-1B5B-4532-98F4-4ACF92F13D2E%205.png)
 What is the effect of the policy?
 * A. You are prevented from creating Azure SQL servers anywhere in Subscription 1.
 * B. You can create Azure SQL servers in ContosoRG1 only.
@@ -306,19 +307,20 @@ What is the effect of the policy?
 * D. You can create Azure SQL servers in any resource group within Subscription 1.
 
 ## Topic2/Question7
-![](AZ104%20dump/6D2ED933-CF06-4766-A5CB-AE748A2E36FA%204.png)
+![](AZ104%20dump/6D2ED933-CF06-4766-A5CB-AE748A2E36FA%205.png)
 - Apply tag and its default value -> Append a tag and its value to resources
 - Policy 적용 후에는 tag를 지정하더라도 default tag가 붙음 (아래 VNET3)
 - Policy 적용 전 생성된 VNET1은 remediation 해야 default tag 붙음
-![](AZ104%20dump/488C37F4-0892-4C86-95E2-DBCFF1C2C7FD%204.png)
+![](AZ104%20dump/488C37F4-0892-4C86-95E2-DBCFF1C2C7FD%205.png)
 
 ## Topic2/Question8
 You have an Azure subscription named AZPT1 that contains the resources shown in the following table:
-![](AZ104%20dump/0004900001%204.png)
+![](AZ104%20dump/0004900001%205.png)
 
 You create a new Azure subscription named AZPT2.
 You need to identify which resources can be moved to AZPT2.
-Which resources should you identify? **ALL**
+Which resources should you identify? 
+- **ALL**
 
 
 ## Topic2/Question9
@@ -372,15 +374,15 @@ What should you configure in Azure AD?
 
 ## Topic2/Question14
 You have Azure Active Directory tenant named Contoso.com that includes following users:
-![](AZ104%20dump/C3C235A1-CB81-480A-AF21-7DDFCC96DE37%202.png)
+![](AZ104%20dump/C3C235A1-CB81-480A-AF21-7DDFCC96DE37%203.png)
 
 Contoso.com includes following Windows 10 devices:
-![](AZ104%20dump/96CF65F9-EBB3-4259-AF0E-6EF06BC0EB4D%202.png)
+![](AZ104%20dump/96CF65F9-EBB3-4259-AF0E-6EF06BC0EB4D%203.png)
 
 You create following security groups in Contoso.com:
-![](AZ104%20dump/9A03B30A-E6B9-4F07-8B70-852ECF5D9422%202.png)
+![](AZ104%20dump/9A03B30A-E6B9-4F07-8B70-852ECF5D9422%203.png)
 
-![](AZ104%20dump/EB998EAA-3251-4030-931B-05AE86C2ABF9%202.png)
+![](AZ104%20dump/EB998EAA-3251-4030-931B-05AE86C2ABF9%203.png)
 - NYN
 
 > As a global administrator or cloud device administrator, you can manage the registered or joined devices. User administrator can manage users but not devices.  
@@ -394,7 +396,7 @@ You create following security groups in Contoso.com:
 ## Topic2/Question15
 You have an Azure subscription that contains a resource group named RG26.
 RG26 is set to the West Europe location and is used to create temporary resources for a project. RG26 contains the resources shown in the following table.
-![](AZ104%20dump/F1244E34-05CD-4575-9F73-F081F6C7F003%202.png)
+![](AZ104%20dump/F1244E34-05CD-4575-9F73-F081F6C7F003%203.png)
 SQLDB01 is backed up to RGV1.
 When the project is complete, you attempt to delete RG26 from the Azure portal. The deletion fails.
 You need to delete RG26.
@@ -403,8 +405,6 @@ What should you do first?
 * B. Stop VM1
 * C. Stop the backup of SQLDB01 ✔️
 * D. Delete sa001 
-
-![](AZ104%20dump/D9875E7F-3AF1-4F6D-A4A3-35FDAE16E603%202.png)
 
 ## Topic2/Question16
 You have an Azure subscription named Subscription1 that contains a virtual network named VNet1. VNet1 is in a resource group named RG1.
@@ -423,7 +423,7 @@ What should you do?
 > **Network Contributor** lets you manage networks, but not access to them. Users assigned the Network contributor role can configure and manage network-related resources but do not have access to other Azure resources outside the networking scope.  
 
 > **User Access Administrator** lets you manage user access to Azure resources. By default, only users with the `Owner` or `User Access Administrator` roles can assign roles  to others.  
-![](AZ104%20dump/9EB1DFE4-B3B7-4482-BB4B-74036F5B9521%202.png)
+![](AZ104%20dump/9EB1DFE4-B3B7-4482-BB4B-74036F5B9521%203.png)
 
 ## Topic2/Question17
 You have an Azure Active Directory (Azure AD) tenant named contosocloud.onmicrosoft.com.
@@ -438,7 +438,7 @@ Which type of DNS record should you create?
 
 > menu: Azure portal > Microsoft Entra ID > Custom domain names  
 > you can see that **TXT and MX are available options for DNS record type**.  
-![](AZ104%20dump/BCD4F844-1F4C-4B60-BC10-8F6074014D49%202.png)
+![](AZ104%20dump/BCD4F844-1F4C-4B60-BC10-8F6074014D49%203.png)
 
 ## Topic2/Question18
 You have an Azure Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1. Adatum contains a group named Developers.
@@ -456,7 +456,7 @@ You have an Azure subscription that is used by four departments in your company.
 You need to send a report to the finance department. **The report must detail the costs for each department.**
 Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.
 Select and Place:
-![](AZ104%20dump/F374E9C4-8A01-4691-AE37-195CC7CAFD46.png)
+![](AZ104%20dump/F374E9C4-8A01-4691-AE37-195CC7CAFD46%202.png)
 
 ## Topic2/Question22
 You have an Azure subscription named Subscription1 that contains an Azure Log Analytics workspace named Workspace1.
@@ -473,13 +473,13 @@ Which query should you run in Workspace1?
 ## Topic2/Question23
 You have an Azure subscription that contains a virtual network named VNET1 in the East US 2 region. A network interface named VM1-NI is connected to VNET1.
 You **successfully deployed** the following Azure Resource Manager template.
-![](AZ104%20dump/133026EC-CB2C-4D64-BBAE-8A4FAE963F36.png)
+![](AZ104%20dump/133026EC-CB2C-4D64-BBAE-8A4FAE963F36%202.png)
 
-![](AZ104%20dump/918353B4-5544-499D-9808-8B6D2143AF10.png)
+![](AZ104%20dump/918353B4-5544-499D-9808-8B6D2143AF10%202.png)
 
 ## Topic2/Question24
 You have an Azure subscription named Subscription1. Subscription1 contains the resource groups in the following table.
-![](AZ104%20dump/92A2D270-3117-49FA-AC07-6F4265CD4673.png)
+![](AZ104%20dump/92A2D270-3117-49FA-AC07-6F4265CD4673%202.png)
 
 RG1 has a web app named WebApp1. WebApp1 is located in West Europe.
 You move WebApp1 to RG2.
@@ -492,11 +492,11 @@ What is the effect of the move?
 ## Topic2/Question25
 You have an Azure subscription named Subscription1 that has a subscription ID of c276fc76-9cd4-44c9-99a7-4fd71546436e.
 You need to **create a custom RBAC role named CR1** that meets the following requirements:
-- ✑ Can be assigned only to the resource groups in Subscription1
-- ✑ Prevents the management of the access permissions for the resource groups
-- ✑ Allows the viewing, creating, modifying, and deleting of resources within the resource groups
+	- ✑ Can be assigned only to the resource groups in Subscription1
+	- ✑ Prevents the management of the access permissions for the resource groups
+	- ✑ Allows the viewing, creating, modifying, and deleting of resources within the resource groups
 What should you specify in the assignable scopes and the permission elements of the definition of CR1? To answer, select the appropriate options in the answer area.
-[음악](file:///Users/thme808/Downloads/음악) ![](AZ104%20dump/3A0B61AD-708B-49DB-A9C4-CD3CD04878B9.png)
+![](AZ104%20dump/3A0B61AD-708B-49DB-A9C4-CD3CD04878B9%202.png)
 - answers: second one, first one
 
 > you cannot wildcard all of them using /resourceGroups. RG name need be specified and even then applies to one particular RG  
@@ -537,7 +537,7 @@ Which blade should you use?
 You have an Azure Active Directory (Azure AD) tenant.
 You need to create a conditional access policy that requires all users to use multi-factor authentication when they access the Azure portal.
 Which **three** settings should you configure? To answer, select the appropriate settings in the answer area.
-![](AZ104%20dump/D4ED7406-A7FC-46C1-8C0F-69F05A5833A7.png)
+![](AZ104%20dump/D4ED7406-A7FC-46C1-8C0F-69F05A5833A7%202.png)
 
 
 > — Select Users & Groups : Where you have to choose all users.  
@@ -563,4 +563,46 @@ You need to ensure that User1 can assign a policy to the tenant root management 
 * D. Create a new management group and delegate User1 as the owner of the new management group.
 > B or C???  
 
-![](AZ104%20dump/468DC18D-D929-43C4-9C47-B5E6232C166D.png)
+![](AZ104%20dump/468DC18D-D929-43C4-9C47-B5E6232C166D%202.png)
+
+## Topic2/Question31
+You have an Azure Active Directory (Azure AD) tenant named adatum.com. Adatum.com contains the groups in the following table.
+![](AZ104%20dump/E00B0F74-13E0-4C42-96A1-DE0E4F39A01D.png)
+You create two user accounts that are configured as shown in the following table.
+![](AZ104%20dump/0BF9C25A-F9F3-4AF1-8EDE-6E0040507491.png)
+Of which groups are User1 and User2 members? To answer, select the appropriate options in the answer area.
+
+![](AZ104%20dump/0008000001.png)
+
+## Topic2/Question32
+You have a hybrid deployment of Azure Active Directory (Azure AD) that contains the users shown in the following table.
+![](AZ104%20dump/0008100001.png)
+You need to modify the JobTitle and UsageLocation attributes for the users.
+For which users can you modify the attributes from Azure AD? To answer, select the appropriate options in the answer area.
+
+![](AZ104%20dump/0008300001.png)
+
+> Box 1:User1 and User3 only  
+> You must use Windows Server Active Directory to update the identity, contact info, or job info for users whose source of authority is Windows Server Active Directory.  
+>   
+> Box 2: User1, User2, and User3  
+> Usage location is an Azure property that can only be modified from Azure AD (for all users including Windows Server AD users synced via Azure AD Connect).  
+https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal
+
+## Topic2/Question33
+You need to ensure that an Azure Active Directory (Azure AD) user named Admin1 is assigned the required role to enable Traffic Analytics for an Azure subscription.
+- You assign the Network Contributor role at the subscription level to Admin1. ✔️
+- You assign the Owner role at the subscription level to Admin1. ✔️
+- You assign the Reader role at the subscription level to Admin1. ✔️
+
+> Your account must meet one of the following to enable traffic analytics: Your account must have any one of the following Azure roles at the subscription scope: owner, contributor, reader, or network contributor.  
+
+## Topic2/Question36
+You have an Azure subscription that contains a user named User1.
+You need to ensure that User1 can deploy virtual machines and manage virtual networks. The solution must use the principle of least privilege.
+Which role-based access control (RBAC) role should you assign to User1?
+* A. Owner
+* B. Virtual Machine Contributor
+* C. Contributor ✔️
+* D. Virtual Machine Administrator Login
+
