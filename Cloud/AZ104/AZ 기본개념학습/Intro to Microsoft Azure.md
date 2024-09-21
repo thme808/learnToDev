@@ -1,0 +1,317 @@
+# Intro to Microsoft Azure
+#개발/Azure
+## 클라우드
+### cloud의 발전
+- 물리적 서버 -> Terminal Server -> 가상화 (vmware…) -> public cloud 
+
+### cloud 종류
+- 개인용 cloud (google drive, notion, dropbox,…)
+	- 개인이 직접 회원가입, 본인이 직접 관리
+- 기업용 cloud (Azure, AWS,…)
+	- 기업 관리자가 가입 및 구독 후 **인증**용 ID 만들고, 그 사용자가 자원에 접속할 수 있도록 **권한**을 부여함.
+	- login = Authentication + Authorization
+	- 직원 개인은 별도 회원 가입 하지 않아도 됨
+
+> **platform** : 다른 곳보다 높은 곳. 모든 사람들이 볼 수 있는 곳. 요즘은 시장이라는 의미로 확장됨 (여러가지를 제공한다는 뜻)  
+
+## 대표적인 Azure Services
+1. 컴퓨팅(Computing)
+	* Virtual Machines (VMs): 가상 서버로 OS와 SW를 설치하여 사용
+	* App Service: web app을 빠르게 배포할 수 있는 플랫폼
+	* Azure Kubernetes Service (AKS): 컨테이너 기반의 애플리케이션을 관리하는 쿠버네티스 서비스
+2. 스토리지(Storage)
+	* Blob Storage: any type
+	* Azure Files
+		* SMB(Server Message Block) 프로토콜을 통해 공유 폴더처럼 사용할 수 있는 클라우드 파일 시스템 (z drive 같은)
+			- SMB: 컴퓨터 네트워크에서 파일 및 프린터 공유를 위한 프로토콜
+			- port 445+를 사용하는데, 랜섬웨어 이슈로 기업내부에서 default로 막혀있는 경우가 많음
+3. 네트워크(Networking)
+	- Virtual Network:  가상 네트워크를 구축하고 각종 리소스를 안전하게 연결
+	- Load Balancer:
+		- 여러 가상 머신(VM)에 걸쳐 트래픽을 분산
+		- Layer 4 부하 분산. TCP/UDP 트래픽을 대상으로 부하 분산
+			- IP, port 기반으로 분산 처리
+	- Application Gateway: 
+		- 웹 애플리케이션 트래픽(HTTP/HTTPS 트래픽) 을 관리하는 부하 분산 서비스
+		- 응용 계층(Layer 7) 부하를 분산. URI path, HTTP header, query 등 다양한 소스를 기반으로 분산 처리가 가능
+	- Traffic Manager: 지리적으로 분산된 사용자에게 빠른 응답을 주기위해 전 세계적으로 분산된 DNS 기반 트래픽 분산을 제공
+	- Azure CDN: 전 세계에 분산된 엣지 서버를 통해 콘텐츠를 빠르게 전달한다
+4. 데이터베이스(Database)
+	- Azure SQL Database: MS SQL 기반
+	- Cosmos DB: 분산 데이터베이스로 다양한 데이터 모델을 지원
+5. 관리 및 모니터링(Management & Monitoring)
+	- Azure Monitor: 리소스 성능, 상태 모니터링
+	- Azure Policy: 조직의 거버넌스를 적용하고 자동화 하는 기능
+6. 머신러닝 및 인공지능
+
+**Layer 4 switch 와 TCP/IP의 기본 이해**
+- A layer 4 switch functions at the transport layer (layer 4) within the OSI model, empowering it to determine routing based on information from both the network layer (layer 3) and the transport layer (layer 4). layer 4 switches operate at the transport layer and consider additional information like port numbers and application protocols. This enables layer 4 switches to provide features, such as load balancing, Packet prioritization, QoS.
+- port: 각 프로토콜의 데이터가 통하는 논리적 통로
+- TCP: Transmission Control Protocol. 전송계층(layer 4)에 위치하며 네트워크상 정보전달을 안정적으로, 순서대로, 에러없이 교환하는 프로토콜. TCP header를 이용해 통신단말 간 통신 준비 여부, 데이터의 정상 송수신 여부 등을 확인하여 신뢰성을 보장하고 데이터 흐름을 제어함. 
+	- TCP header: SYN, ACK, FIN, RST, Source Port, Destination Port, Checksum,…
+- IP는 패킷간의 관계를 이해하지 못하고 보낸 순서와 받는 순서를 보장받을 수 없음. 단순히 목적지를 찾아가는 것에 중점을 둠.
+
+## Azure 구독하기
+[Microsoft Azure](https://portal.azure.com/#home)
+### Resource 사용 현황 및 쿼터 확인
+* All services -> Subscriptions -> 자신의 구독 선택 -> Settings -> Usage + quotas
+* 무료 구독자는 **Public IP Address를 최대 3개, vCPU는 최대 4개까지**
+사용 가능
+
+### Subscription, Tenant
+- 종이신문 구독을 예를 들면, 독자가 신문 배달을 위해 개인정보로 회원가입한다.
+- 개인정보/회원가입이 `Tenant(Directory)`이고, 신문이 바로 `Resource`이다. 만약 다른 신문사를 구독하려면 해당 신문사에 회원가입을 애햐 한다. 
+
+### Microsoft Entra ID (aka. Azure AD)
+- 모든 Microsoft Cloud Service의 **중심은 Microsoft Entra ID**
+- Microsoft가 제공하는 클라우드 기반의 엔터프라이즈 디렉토리 및 ID 관리 서비스로, Azure Active Directory -> Microsoft Entra ID 로 용어 변경됨
+* 이를 통해 조직은 직원, 애플리케이션 및 디바이스에 대한 보안 인증과 권한 부여를 관리할 수 있다
+* Azure Portal 및 Cloud Application(Microsoft 365 등)의 인증을 처리
+![](Intro%20to%20Microsoft%20Azure/B7E4BA8F-967F-4001-A958-2D2F9C2529AF.png)
+
+![](Intro%20to%20Microsoft%20Azure/409DC9A6-FCE0-4E3B-8B8B-EFE2C8918F62.png)
+
+### Entra ID 핵심 기능
+- 사용자 및 그룹 관리
+사용자 관리: 사용자 계정을 만들고 속성 및 권한을 관리
+그룹 관리: 여러 사용자를 그룹화하여 일관된 권한 및 정책 적용이 가능
+- 애플리케이션 통합
+	* 싱글 사인온(SSO): 하나의 자격 증명으로 여러 애플리케이션에 한 번에
+	로그인
+	* 앱 프로비저닝: 사용자 계정을 자동으로 애플리케이션에 생성, 업데이트,
+	제거
+- 액세스 관리
+	* 조건부 액세스: 위치, 디바이스 상태 등 다양한 조건에 따라 액세스 권한을
+	제어
+	* 다중 인증(MFA): 추가적인 보안 레이어로 인증을 강화
+- ID 보호 및 보안
+	- ID 보호: 위험한 로그인 시도 및 동작을 감지하여 조치
+	* Privileged Identity Management (PIM): 관리자 역할에 대한 권한 사용을
+	제한하고 모니터링
+- 디바이스 관리
+	* 디바이스를 Azure Entra ID에 등록하여 조직의 보안 정책을 적용
+- B2B 및 B2C 협업
+	* B2B: 외부 파트너와의 안전한 협업을 위해 조직 외부 사용자를 관리
+	* B2C: 소비자 대상 서비스를 위한 사용자 인증 및 ID 관리를 지원
+- 보고 및 모니터링
+	* 액세스 및 보안 활동에 대한 보고서 제공 및 이상 감지 기능을 지원
+
+### Entra ID 주요 개념
+- Tenant (Directory): Azure Entra ID 테넌트는 조직의 인스턴스로, 하나의 조직을 위한 고유한 디렉토리
+* 디렉토리(Directory): 조직의 사용자, 그룹, 애플리케이션 및 디바이스를 관리하는 데 사용되는 데이터베이스
+* 앱 등록(App Registration): 애플리케이션이 Azure Entra ID에 인증하기 위해 등록되어야 하는 과정
+* 역할 기반 액세스 제어(RBAC): 다양한 역할을 통해 사용자에게 필요한 권한만 부여하는 방식
+* 조건부 액세스(Conditional Access): 특정 조건(위치, 디바이스, 사용자 위험 수준 등)에 따라 액세스 정책을 다르게 적용
+* MFA (Multi-Factor Authentication): 
+	* 비밀번호 외에 추가적인 인증 방법을 사용하여 보안을 강화하는 인증 방식
+	- MFA는 보안을 강화하기 위해 사용자가 로그인할 때 두 가지 이상의 인증방법(SMS, 전화 호출, 모바일 앱을 통한 인증)을 사용하도록 요구한다
+
+## Subscription-Resource, Group-Resource 의 관계
+* 관리 범위의 크기에 따라 `Subscription` > `Resource Group` >
+`Resource`로 구분된다
+	- 실무에서, 구독계정은 총무팀정도. 구독계정으로 IT관리자에게 `Owner`역할을 부여해 **총 관리 권한을 부여**한다.
+* Subscription에 관리 권한을 위임하면 그 아래에 있는 Resource Group과 Resource에도 권한이 상속된다
+![](Intro%20to%20Microsoft%20Azure/3F267E24-C3FD-4A3B-89B0-937FC9E5D276.png)
+
+### Resource Group의 역할
+1. 자원을 생성할 때는 무조건 Resource Group에 포함되어야 함
+	- 어떤 자원을 삭제 할때는 리소스 그룹단위로 삭제해야 깔끔하게 삭제 됨
+2. 비용 계산에 용이함
+3. 관리권한 위임
+4. Resource Group에 ARM 템플릿 (json파일) 생성할 수 있음
+	- 6개월 단위로 사용하는 vm들이 있는데, 사용하지않을 때는 삭제해야 과금되지 않음. 추후 다시 생성시에 ARM 템플릿으로 생성.
+
+Azure Virtual Machine 사용 예시
+- 웹 서버 및 애플리케이션 서버
+- 개발 및 테스트 환경
+- 데이터베이스 서버
+- 고성능 컴퓨팅(HPC)
+- 백업 및 재해 복구
+	- On-Premises 환경의 Backup 서버로 사용하거나 재해 복구(DR) 계획의 일환으로 Azure VM을 활용
+	- Azure Site Recovery를 통해 복구 계획을 쉽게 구성
+- **가상 데스크탑 인프라(VDI)**
+	- 원격 데스크탑 환경을 제공하여 사용자가 어디서나 접근할 수 있는 가상 데스크탑 인프라를 구축. Azure Virtual Desktop을 통해 관리 및 배포를 간소화
+
+## Azure Virtual Machine
+### VM생성시 유의점
+- Virtual Network 에 연결하여 구동하기
+- VM region 결정 (policy로 관리)
+	- 한번 결정된 위치는 변경 불가함
+	- region마다 기능이나 H/W capability가 다름
+	- 연결을 원하는 Vnet의 위치와 같은 위치를 선택해야함
+		- 내 vm이 korea south고, 내 local 이 korea central이면 서로 통신 불가함
+- Virtual Network
+	- switch -> router <- switch
+	- switch가 네트워크의 단위. router가 네트워크를 연결함
+	- Virtual Network는 switch의 클라우드 버젼
+- Availability zone
+
+### VM Storage
+* 각 Azure VM에는 두 개 이상의 디스크가 포함되어 있다
+	* OS 디스크
+		- **OS 디스크와 데이터 디스크가 분리되어 있다는 것을 유념**
+	* 임시 디스크(내용 손실 가능)
+	* 데이터 디스크(선택 사항)
+* OS 및 데이터 디스크는 Azure Storage 계정에 있다.
+	* Azure 기반 스토리지 서비스
+	* 표준(HDD, SSD) 또는 프리미엄(SSD) 또는 울트라(SSD)
+- Azure VM을 만들 때 선택할 수 있는 디스크는 다음과 같다
+	* Managed disk (recommended)
+	* Unmanaged disks
+
+![](Intro%20to%20Microsoft%20Azure/1999C94E-A42E-42AD-A0FD-FA90EE35341E.png)
+
+
+## Availability Set  and Availability Zone
+### Maintenance vs. Downtime
+> Azure 의 SLA가 99.99%일 때 1년에 약 52.56분의 다운타임을 허용하며 그에 따른 책임이 없다는 뜻.  
+- Unplanned Hardware Maintenance (예기치 않은 하드웨어 유지보수)
+	* Azure 데이터센터의 하드웨어 구성 요소에서 문제가 발견되었을 때 발생한다. 
+- Unexpected Downtime (예기치 않은 다운타임)
+	* 예상치 못한 이유로 인해 서비스가 중단되는 경우를 말한다. 네트워크 장애,
+데이터센터 정전, 소프트웨어 버그 등의 다양한 이유로 발생할 수 있다.
+* Planned Maintenance (계획된 유지보수)
+	* 주기적으로 시스템 업데이트, 보안 패치 적용, 하드웨어 업그레이드
+
+> Azure에서 업데이트할때 랙단위로 진행하기 때문에 서버 다운타임이 발생해서는 안됨. 매출손실로 직결되기 때문에. 그래서 Availability Set으로 고가용성과 복원력을 보장한다.  
+
+### Availability Set
+- Fault Domain: VM을 물리적 서버 랙 단위로 격리
+* Update Domain: VM을 논리적 업데이트 그룹 단위로 격리
+* Fault Domain이 2개, Update Domain이 5개인 경우, VM은 두 개의
+서로 다른 물리적 랙에 배치되고, 다섯 개의 서로 다른 논리적 업데이트
+그룹으로 분산된다
+![](Intro%20to%20Microsoft%20Azure/3A196768-ABB4-42F6-BE23-B26DD7494879.png)
+
+![](Intro%20to%20Microsoft%20Azure/9682A6A1-347D-42D6-9373-FB3418AC7C58.png)
+
+### Availability Zone
+- 한 Region에 지역적으로 떨어진 2개 이상의 Data Center로 구성된다
+	- 각 데이터 센터는 zone1, zone2, zone3 등으로 표기되며 일반적으로 3개의 zone을 가짐
+* 각 Zone은 자체 전력, 네트워킹, 냉각 장치를 갖추고 있어 다른 Zone에서
+발생하는 장애의 영향을 받지 않는다
+* 데이터 센터 오류로부터 보호한다.
+* 99.99% SLA를 제공한다
+	* 1 년에 약 52.56분의 다운타임을 허용
+* FD와 UD를 결합한다
+	* Availability Zones가 물리적 분리와 논리적 분리를 동시에 제공하여, 하드웨어 장애와 소프트웨어 업데이트 모두에 대한 고가용성을 보장한다
+
+
+
+## 실습
+### Entra ID 및 Azure Portal 관리 작업 위임하기 (실습 개요)
+- Subscriptions 에는 주로 IT관리자, adminuser 한 명에게 `Owner` , `Global Administrator` 역할을 부여하여 총 관리 권한을 부여함
+	- **Entra ID 관리 최고권한**: `Global Administrator`
+	- **Azure portal 관리 최고권한**: `Owner`
+* 구독 계정으로 모든 관리작업을 하지 말고, 2nd User Account를 만들어 그 계정으로 Entra ID도 관리(사용자 계정 생성 등)하게 하고 Azure Portal 자원도 관리하는 것을 권장
+* Entra ID 관리를 adminuser에게 위임하려면 구독 계정으로 Entra ID에 로그인하여 이미 생성된 adminuser 사용자에게 `Global Administrator` 역할을 부여한다
+- Azure Portal의 Subscription의 Access Control(IAM)에서 `Owner` 역할을 adminuser 에게 부여한다
+* 이제는 Entra ID의 작업(사용자 계정 생성 등)은 모두 adminuser로 로그인하여 진행하면 된다
+* adminuser 사용자가 다른 직원들이 Azure Portal의 자원을 사용하게 하려면  resource group의 Access Control(IAM)에서 `Owner` , 혹은`Contributor` 역할을 할당하면 된다.
+* 앞으로 Azure Portal의 모든 관리는 adminuser 사용자가 할 수 있으며, 이 사용자는 회사의 다른 직원이 Azure Portal 이용하도록 권한을 위임해줄 수 있다
+
+### Entra ID 실습 (실습 시나리오)
+- 구독계정으로  IT 담당자 ID 를 생성
+- 구독계정이 Owner그룹을 IT관리자에 위임
+	- IT 담당자 ID: administer
+- IT관리자가 관리 권한 Contributor 를 다른 계정에 위임
+	- Users 생성
+		- devadmin, devuser1, devuser2
+		- enguser1, enguser2
+	2. Group 생성 및 멤버 매핑
+		- devgroup -> devadmin, devuser1,2
+		- enggroup -> enguser1, enguser2
+	3. Resource Group 생성 및 role 부여
+		- devRG ->  contributor
+		- engRG -> contributor
+	4. Resource Group 에 멤버/그룹 매핑
+	5. devRG에 VM 등을 생성하도록 devgroup에게 관리를 위임한다
+		- Azure portal role - contributor
+	6. engRG에 VM 등을 생성하도록 enggroup과 devadmin에게 관리를 위임한다
+		- Azure portal role - contributor
+	7. devadmin으로 Azure Portal에 로그인하여 부여된 권한을 확인
+		- devRG, engRG
+	8. devadmin으로 devRG에 Linux VM을 생성한다.
+
+1. User 생성
+![](Intro%20to%20Microsoft%20Azure/5504605C-0828-4526-BAD3-B43E671C4CAA.png)
+![](Intro%20to%20Microsoft%20Azure/09141699-EB11-4381-9375-2912DD74404E.png)
+2. subscription 에 관리 위임
+![](Intro%20to%20Microsoft%20Azure/2F058E8B-0801-47D0-9F88-F296A09D41DD.png)
+3. global admin 역할 부여
+![](Intro%20to%20Microsoft%20Azure/004AF13B-EFF6-4D91-8B3B-BB6E606BD1EB.png)
+4. owner 역할 부여
+![](Intro%20to%20Microsoft%20Azure/9E73827A-96E9-4D35-A654-064635AC5BBB.png)
+
+![](Intro%20to%20Microsoft%20Azure/8A9C8127-76A1-4C79-B56B-DB605449CD16.png)
+![](Intro%20to%20Microsoft%20Azure/F605EB1A-B9F5-4E66-B95E-881487F74FA5.png)
+![](Intro%20to%20Microsoft%20Azure/7DA2B433-8C00-485F-8238-05767A4886D5.png)
+
+5. adminuser 계정으로 로그인
+![](Intro%20to%20Microsoft%20Azure/E90FAA99-7889-470B-9E89-06DA8C38CCB8.png)
+
+### Resource group 
+1. region은 변경 불가하므로 잘 선택해야함.
+![](Intro%20to%20Microsoft%20Azure/C4B64166-6607-40CE-B838-1D0D3B1541BA.png)
+![](Intro%20to%20Microsoft%20Azure/5DDACA51-4811-46F6-BFD1-3023982FC899.png)
+
+- Resource Group에 role 부여
+![](Intro%20to%20Microsoft%20Azure/724C4E3C-B567-4CCD-AD21-24C032631E90.png)
+- Resource Group에 개별 멤버, 혹은 group을 매핑함 
+![](Intro%20to%20Microsoft%20Azure/CA30D916-C4BD-4E59-805D-EA7418A4857F.png)
+
+### Azure Policy
+- Azure 환경에서 조직의 규정 준수 요구 사항을 강제하고 리소스의 일관성을 유지할 수 있다
+- 시나리오
+> 우리 회사는 클라우드 환경에서 일관성을 유지하고 비용을 절감하기 위해 특정 리소스를 특정 지역에만 배포하고, 특정 크기의 VM만 사용하도록 정책을 적용하고자 합니다. 또한, 모든 리소스에는 특정 태그가 포함되어야 한다  
+
+![](Intro%20to%20Microsoft%20Azure/4918BC7B-CF99-4D8C-ADC9-5BD975CB4A8C.png)
+- korea central 지역에만 배포하도록 제한
+	- 메세지 처리 “Region은 korea central만 가능함”
+![](Intro%20to%20Microsoft%20Azure/A3764971-58FD-4193-B423-58BC0B044BC0.png)
+
+![](Intro%20to%20Microsoft%20Azure/32886E33-4E67-4F29-9283-7D29648E7C99.png)
+
+- 신규 정책 적용된 것 확인 
+![](Intro%20to%20Microsoft%20Azure/A8CF967B-1B32-4037-90B6-B3550D54B1C7.png)
+- korea central 외 다른 region으로 vm 생성시 아래 에러 발생함
+![](Intro%20to%20Microsoft%20Azure/9C99BBA6-EE09-47B1-A2FF-79D9ADD08615.png)
+
+### 쉘 명령어로 Azure (Cloud Shell)
+1. DevOps, 자동화 및 인프라 관리 도구가 기본 내장되어 있다
+	* Terraform: terraform —version
+	* Ansible: ansible —version
+	* Git: git version
+	* Docker: docker version
+	* Kubernetes: kubectl version
+	* Helm: helm version
+	* Python: python —version
+	* Node.js: node —version
+	
+2. Storage account 생성
+	- adminuser로 쉘 열기
+	- storage account name은 세계적으로 고유해야함
+![](Intro%20to%20Microsoft%20Azure/BD18D0E2-11F7-42B6-887A-130E7142E3F3.png)
+- az group list -o table
+	- output table option 주면 테이블 형식으로 출력
+![](Intro%20to%20Microsoft%20Azure/0AA255A5-7C4E-4941-AD82-01F0CFA94D77.png)
+
+![](Intro%20to%20Microsoft%20Azure/EC08F4EA-1E4E-4F1C-96BF-92BB2C8AA7A2.png)
+
+![](Intro%20to%20Microsoft%20Azure/C3D50941-3347-4B14-A036-5757AE37AB10.png)
+
+**public IP 조회**
+	- curl ifconfig.io
+
+### AZ104 실습하기
+클라우드 cli 에서 아래 명령어 수행
+```shell
+git clone https://github.com/godeploy/AZ104.git
+
+# 실습환경 구성
+ls -la
+cd Module03
+az group create -n myRG -l eastus
+az deployment group create -g myRG —template-file az104-03b-md-
+template.json —parameters az104-03b-md-parameters.json
+```
