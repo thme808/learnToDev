@@ -166,7 +166,7 @@ Which PowerShell cmdlets should you use?
 Your company has an Azure subscription that includes a number of Azure virtual machines (VMs), which are all part of the same virtual network.
 Your company also has an on-premises Hyper-V server that hosts a VM, named VM1, which must be replicated to Azure.
 Which of the following objects that must be created to achieve this goal? 
-![](AZ104%20dump/FF604C05-80CA-4F62-BA72-CE6322278FD3%2025.png)
+![](AZ104%20dump/FF604C05-80CA-4F62-BA72-CE6322278FD3%2026.png)
 
 ## Topic1/Question24
 Your company’s Azure subscription includes two Azure networks named VirtualNetworkA and VirtualNetworkB.
@@ -188,12 +188,12 @@ Does this meet the goal?
 - Solution: You modify the Azure Active Directory (Azure AD) authentication policies.
 - Solution: You export the client certificate from Computer1 and install the certificate on Computer2 ✔️
 
-![](AZ104%20dump/897F6F80-820A-4B19-AA69-A3213F90DE28%203.png)
+![](AZ104%20dump/897F6F80-820A-4B19-AA69-A3213F90DE28%204.png)
 
 - point-to-site VPN
-![](AZ104%20dump/8EA857F4-18A6-4460-88B6-D9777A52CF63%203.png)
+![](AZ104%20dump/8EA857F4-18A6-4460-88B6-D9777A52CF63%204.png)
 - site-to-site VPN
-![](AZ104%20dump/3A948A2E-1030-46DD-B4FD-CAC87A80AF20%203.png)
+![](AZ104%20dump/3A948A2E-1030-46DD-B4FD-CAC87A80AF20%204.png)
 
 
 ## Topic1/Question27
@@ -290,7 +290,7 @@ You have an Azure subscription named Subscription1 that contains a resource grou
 In RG1, you create an internal load balancer named LB1 and a public load balancer named LB2.
 You need to ensure that an administrator named Admin1 can manage LB1 and LB2. The solution must follow **the principle of least privilege**.
 Which role should you assign to Admin1 for each task? To answer, select the appropriate options in the answer area.
-![](AZ104%20dump/932E9687-C584-465F-975B-7C0AF92038FE%2025.png)
+![](AZ104%20dump/932E9687-C584-465F-975B-7C0AF92038FE%2026.png)
 - third one, third one
 
 > LB와 backend pool(vm)에 모두에 접근 가능해야함 -> network contributor 역할이**RG level에 할당되어야** 함.   
@@ -319,16 +319,16 @@ What should you do?
 
 > **Owner** grants full access to manage all resources, including the ability to assign roles in Azure RBAC.  
 
-![](AZ104%20dump/9EB1DFE4-B3B7-4482-BB4B-74036F5B9521%2023.png)
+![](AZ104%20dump/9EB1DFE4-B3B7-4482-BB4B-74036F5B9521%2024.png)
 
 
 ## Topic2/Question52
 You have an Azure Load Balancer named LB1.
 You assign a user named User1 the roles shown in the following exhibit.
-![](AZ104%20dump/0010800001%2019.jpg)
+![](AZ104%20dump/0010800001%2020.jpg)
 Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
 
-![](AZ104%20dump/0010900002%2019.jpg)
+![](AZ104%20dump/0010900002%2020.jpg)
 
 ## Topic2/Question56
 You have 15 Azure subscriptions.
@@ -348,7 +348,7 @@ What should you do?
 You have an Azure Subscription that contains a storage account named storageacct1234 and two users named User1 and User2.
 You assign User1 the roles shown in the following exhibit.
 
-![](AZ104%20dump/0012500001%2010.jpg)
+![](AZ104%20dump/0012500001%2011.jpg)
 
 Which two actions can User1 perform? Each correct answer presents a complete solution.
 * A. Assign roles to User2 for storageacct1234.
@@ -358,7 +358,7 @@ Which two actions can User1 perform? Each correct answer presents a complete sol
 * E. View file shares in storageacct1234. 
 	* storage account contributor role
 
-![](AZ104%20dump/F8B3800C-17C7-47BE-A553-4ED501A82179%208.png)
+![](AZ104%20dump/F8B3800C-17C7-47BE-A553-4ED501A82179%209.png)
 
 ## Topic2/Question2
 You have an Azure subscription that contains an Azure Active Directory (Azure AD) tenant named contoso.com and an Azure Kubernetes Service (AKS) cluster named AKS1.
@@ -386,30 +386,30 @@ Which two groups should you create?
 
 ## Topic2/Question4
 You have an Azure Active Directory (Azure AD) tenant named contoso.com that contains the users shown in the following table:
-![](AZ104%20dump/2308337E-C9E6-4B32-BD5C-3E793D1127B2%2025.png)
+![](AZ104%20dump/2308337E-C9E6-4B32-BD5C-3E793D1127B2%2026.png)
 
 User3 is the owner of Group1. Group2 is a member of Group1.
 You configure an access review named Review1 as shown in the following exhibit:
-![](AZ104%20dump/0F12E6E8-16D7-425C-A8CE-48EDB46105FC%2025.png)
+![](AZ104%20dump/0F12E6E8-16D7-425C-A8CE-48EDB46105FC%2026.png)
 
-![](AZ104%20dump/D85F0920-784C-4CD3-BC73-9838CE863B03%2025.png)
+![](AZ104%20dump/D85F0920-784C-4CD3-BC73-9838CE863B03%2026.png)
 - NNN
 
 > note that scope is **Guest users only**. Reviewers are **Group Owners**  
 
 ## Topic2/Question5
 You have the Azure management groups shown in the following table:
-![](AZ104%20dump/55047A69-41C7-425A-9B03-F246EF630DFD%2025.png)
+![](AZ104%20dump/55047A69-41C7-425A-9B03-F246EF630DFD%2026.png)
 You add Azure subscriptions to the management groups as shown in the following table:
-![](AZ104%20dump/F70CC2E5-9178-45DE-8F7C-62709DE0205C%2025.png)
+![](AZ104%20dump/F70CC2E5-9178-45DE-8F7C-62709DE0205C%2026.png)
 You create the Azure policies shown in the following table:
-![](AZ104%20dump/DFE52F83-147F-4D4A-8F36-8D4706FFECFE%2025.png)
+![](AZ104%20dump/DFE52F83-147F-4D4A-8F36-8D4706FFECFE%2026.png)
 
-![](AZ104%20dump/37214963-CFB4-41CD-9CA4-1B97A6439BA5%2025.png)
+![](AZ104%20dump/37214963-CFB4-41CD-9CA4-1B97A6439BA5%2026.png)
 - NNN
 
 ## Topic2/Question6
-![](AZ104%20dump/F5450418-1B5B-4532-98F4-4ACF92F13D2E%2025.png)
+![](AZ104%20dump/F5450418-1B5B-4532-98F4-4ACF92F13D2E%2026.png)
 What is the effect of the policy?
 * A. You are prevented from creating Azure SQL servers anywhere in Subscription 1.
 * B. You can create Azure SQL servers in ContosoRG1 only.
@@ -417,7 +417,7 @@ What is the effect of the policy?
 * D. You can create Azure SQL servers in any resource group within Subscription 1.
 
 ## Topic2/Question7
-![](AZ104%20dump/6D2ED933-CF06-4766-A5CB-AE748A2E36FA%2025.png)
+![](AZ104%20dump/6D2ED933-CF06-4766-A5CB-AE748A2E36FA%2026.png)
 > 정정: Apply tag and its default value -> **Append a tag and its value to resources**  
 
 - VNET1 - `Department: D1`
@@ -427,12 +427,12 @@ What is the effect of the policy?
 - RG6 - `RGroup: RG6`
 	- Resource Group, Subscription 은 Resource 가 아니므로 policy 정책에서 예외임.
 
-![](AZ104%20dump/488C37F4-0892-4C86-95E2-DBCFF1C2C7FD%2025.png)
+![](AZ104%20dump/488C37F4-0892-4C86-95E2-DBCFF1C2C7FD%2026.png)
 
 ## Topic2/Question48
 You have an Azure subscription named Sub1 that contains the Azure resources shown in the following table.
 
-![](AZ104%20dump/0010400001%2020.png)
+![](AZ104%20dump/0010400001%2021.png)
 
 You assign an Azure policy that has the following settings:
 - ✑ Scope: Sub1
@@ -444,11 +444,11 @@ You assign an Azure policy that has the following settings:
 
 You assign tags to the resources as shown in the following table.
 
-![](AZ104%20dump/0010400008%2020.png)
+![](AZ104%20dump/0010400008%2021.png)
 
 For each of the following statements, select Yes if the statement is true. Otherwise, select No.
 
-![](AZ104%20dump/F69A1104-1DA3-41BE-871E-2A0F73340BC0%2013.png)
+![](AZ104%20dump/F69A1104-1DA3-41BE-871E-2A0F73340BC0%2014.png)
 
 > Box 1: Yes -  
 > **“Append a tag and its value to resources” : this policy does not apply to Resource Groups**.   
@@ -463,7 +463,7 @@ For each of the following statements, select Yes if the statement is true. Other
 ## Topic2/Question8
 You have an Azure subscription named AZPT1 that contains the resources shown in the following table:
 
-![](AZ104%20dump/0004900001%2025.png)
+![](AZ104%20dump/0004900001%2026.png)
 
 You create a new Azure subscription named AZPT2.
 You need to identify which resources can be moved to AZPT2.
@@ -523,15 +523,15 @@ What should you configure in Azure AD?
 ## Topic2/Question14
 You have Azure Active Directory tenant named Contoso.com that includes following users:
 
-![](AZ104%20dump/C3C235A1-CB81-480A-AF21-7DDFCC96DE37%2023.png)
+![](AZ104%20dump/C3C235A1-CB81-480A-AF21-7DDFCC96DE37%2024.png)
 
 Contoso.com includes following Windows 10 devices:
-![](AZ104%20dump/96CF65F9-EBB3-4259-AF0E-6EF06BC0EB4D%2023.png)
+![](AZ104%20dump/96CF65F9-EBB3-4259-AF0E-6EF06BC0EB4D%2024.png)
 
 You create following security groups in Contoso.com:
-![](AZ104%20dump/9A03B30A-E6B9-4F07-8B70-852ECF5D9422%2023.png)
+![](AZ104%20dump/9A03B30A-E6B9-4F07-8B70-852ECF5D9422%2024.png)
 
-![](AZ104%20dump/EB998EAA-3251-4030-931B-05AE86C2ABF9%2023.png)
+![](AZ104%20dump/EB998EAA-3251-4030-931B-05AE86C2ABF9%2024.png)
 - NYN
 
 > As a global administrator or cloud device administrator, you can manage the registered or joined devices. User administrator can manage users but not devices.  
@@ -546,7 +546,7 @@ You create following security groups in Contoso.com:
 You have an Azure subscription that contains a resource group named RG26.
 RG26 is set to the West Europe location and is used to create temporary resources for a project. RG26 contains the resources shown in the following table.
 
-![](AZ104%20dump/F1244E34-05CD-4575-9F73-F081F6C7F003%2023.png)
+![](AZ104%20dump/F1244E34-05CD-4575-9F73-F081F6C7F003%2024.png)
 
 SQLDB01 is backed up to RGV1.
 When the project is complete, you attempt to delete RG26 from the Azure portal. The deletion fails.
@@ -571,7 +571,7 @@ Which type of DNS record should you create?
 > menu: Azure portal > Microsoft Entra ID > Custom domain names  
 > you can see that **TXT and MX are available options for DNS record type**.  
 
-![](AZ104%20dump/BCD4F844-1F4C-4B60-BC10-8F6074014D49%2023.png)
+![](AZ104%20dump/BCD4F844-1F4C-4B60-BC10-8F6074014D49%2024.png)
 
 ## Topic2/Question18
 You have an Azure Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1. Adatum contains a group named Developers.
@@ -598,7 +598,7 @@ You need to send a report to the finance department. **The report must detail th
 Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.
 Select and Place:
 
-![](AZ104%20dump/F374E9C4-8A01-4691-AE37-195CC7CAFD46%2022.png)
+![](AZ104%20dump/F374E9C4-8A01-4691-AE37-195CC7CAFD46%2023.png)
 
 ## Topic2/Question22
 You have an Azure subscription named Subscription1 that contains an Azure Log Analytics workspace named Workspace1.
@@ -633,13 +633,13 @@ Which query should you run in Workspace1?
 You have an Azure subscription that contains a virtual network named VNET1 in the East US 2 region. A network interface named VM1-NI is connected to VNET1.
 You **successfully deployed** the following Azure Resource Manager template.
 
-![](AZ104%20dump/40F01695-A068-4BDB-B4BF-89668013BD75%2020.png)
+![](AZ104%20dump/40F01695-A068-4BDB-B4BF-89668013BD75%2021.png)
 
-![](AZ104%20dump/918353B4-5544-499D-9808-8B6D2143AF10%2022.png)
+![](AZ104%20dump/918353B4-5544-499D-9808-8B6D2143AF10%2023.png)
 
 ## Topic2/Question24
 You have an Azure subscription named Subscription1. Subscription1 contains the resource groups in the following table.
-![](AZ104%20dump/92A2D270-3117-49FA-AC07-6F4265CD4673%2022.png)
+![](AZ104%20dump/92A2D270-3117-49FA-AC07-6F4265CD4673%2023.png)
 
 RG1 has a web app named WebApp1. WebApp1 is located in West Europe.
 You move WebApp1 to RG2.
@@ -657,7 +657,7 @@ You need to **create a custom RBAC role named CR1** that meets the following req
 - Allows the viewing, creating, modifying, and deleting of resources within the resource groups
 
 What should you specify in the assignable scopes and the permission elements of the definition of CR1? To answer, select the appropriate options in the answer area.
-![](AZ104%20dump/3A0B61AD-708B-49DB-A9C4-CD3CD04878B9%2022.png)
+![](AZ104%20dump/3A0B61AD-708B-49DB-A9C4-CD3CD04878B9%2023.png)
 - answers: second one, first one
 
 > you cannot wildcard all of them using /resourceGroups. RG name need be specified and even then applies to one particular RG  
@@ -699,7 +699,7 @@ You have an Azure Active Directory (Azure AD) tenant.
 You need to create a conditional access policy that requires all users to use multi-factor authentication when they access the Azure portal.
 Which **three** settings should you configure? To answer, select the appropriate settings in the answer area.
 
-![](AZ104%20dump/D4ED7406-A7FC-46C1-8C0F-69F05A5833A7%2022.png)
+![](AZ104%20dump/D4ED7406-A7FC-46C1-8C0F-69F05A5833A7%2023.png)
 
 
 > — Select Users & Groups : Where you have to choose all users.  
@@ -719,25 +719,25 @@ What should you do?
 ## Topic2/Question31
 You have an Azure Active Directory (Azure AD) tenant named adatum.com. Adatum.com contains the groups in the following table.
 
-![](AZ104%20dump/E00B0F74-13E0-4C42-96A1-DE0E4F39A01D%2021.png)
+![](AZ104%20dump/E00B0F74-13E0-4C42-96A1-DE0E4F39A01D%2022.png)
 
 You create two user accounts that are configured as shown in the following table.
 
-![](AZ104%20dump/0BF9C25A-F9F3-4AF1-8EDE-6E0040507491%2021.png)
+![](AZ104%20dump/0BF9C25A-F9F3-4AF1-8EDE-6E0040507491%2022.png)
 
 Of which groups are User1 and User2 members? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/0008000001%2021.png)
+![](AZ104%20dump/0008000001%2022.png)
 
 ## Topic2/Question32
 You have a hybrid deployment of Azure Active Directory (Azure AD) that contains the users shown in the following table.
 
-![](AZ104%20dump/0008100001%2021.png)
+![](AZ104%20dump/0008100001%2022.png)
 
 You need to modify the JobTitle and UsageLocation attributes for the users.
 For which users can you modify the attributes from Azure AD? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/0008300001%2028.png)
+![](AZ104%20dump/0008300001%2030.png)
 
 > Box 1:User1 and User3 only  
 > You must use Windows Server Active Directory to update the identity, contact info, or job info for users whose source of authority is Windows Server Active Directory.  
@@ -749,13 +749,13 @@ https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-dire
 ## Topic2/Question81
 You have a hybrid deployment of Azure Active Directory (Azure AD) that contains the users shown in the following table.
 
-![](AZ104%20dump/image683%208.png)
+![](AZ104%20dump/image683%209.png)
 
 You need to modify the JobTitle and UsageLocation attributes for the users.
 
 For which users can you modify the attributes from Azure AD? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/0008300001%2029.png)
+![](AZ104%20dump/0008300001%2031.png)
 > when <On-Premises Sync Enable> is “YES” that means the user is in the On-prem AD. When the status is “NO” that means the Users is at AZURE AD.  
 
 ## Topic2/Question30 
@@ -768,7 +768,7 @@ You need to ensure that User1 can assign a policy to the tenant root management 
 
 > No one is given default access to the root management group. Azure AD Global Administrators are the only users that can elevate themselves to gain access.  
 
-![](AZ104%20dump/468DC18D-D929-43C4-9C47-B5E6232C166D%2022.png)
+![](AZ104%20dump/468DC18D-D929-43C4-9C47-B5E6232C166D%2023.png)
 
 ## Topic2/Question33
 You need to ensure that an Azure Active Directory (Azure AD) user named Admin1 is assigned the required role to enable Traffic Analytics for an Azure subscription.
@@ -806,12 +806,12 @@ Which role-based access control (RBAC) role should you assign to User1?
 ## Topic2/Question37 
 You have an Azure Active Directory (Azure AD) tenant that contains three global administrators named Admin1, Admin2, and Admin3.
 The tenant is associated to an Azure subscription. Access control for the subscription is configured as shown in the Access control exhibit. (Click the Access Control tab.)
-![](AZ104%20dump/0008700001%2020.jpg)
+![](AZ104%20dump/0008700001%2021.jpg)
 
 You sign in to the Azure portal as Admin1 and configure the tenant as shown in the Tenant exhibit. (Click the Tenant tab.)
-![](AZ104%20dump/70A25E2F-9111-4ED7-AB0C-5031420EAA15%2020.png)
+![](AZ104%20dump/70A25E2F-9111-4ED7-AB0C-5031420EAA15%2021.png)
 
-![](AZ104%20dump/A0BAEA74-5215-493B-9201-BFB700175858%2020.png)
+![](AZ104%20dump/A0BAEA74-5215-493B-9201-BFB700175858%2021.png)
 
 > Global Administrator 는 EntraID(AD) 최고권한. Azure 권한/RBAC 와는 다른 권한임에 유의해야 함. Azure portal은 Entra ID로 관리할 수 있는 여러 Azure Services 중 하나일 뿐임. **Global Administrator는 access elevation으로 Azure 자원을 관리할 권한을 가질 수 있음.**  
 >   
@@ -823,7 +823,7 @@ You sign in to the Azure portal as Admin1 and configure the tenant as shown in t
 ## Topic2/Question59
 You java an Azure subscription that contains the following users in an Azure AD tenant named contoso.onmiscrosoft.com:
 
-![](AZ104%20dump/D8EB7E8B-B50C-4CB2-B1E2-45FAC889B8EB%2011.png)
+![](AZ104%20dump/D8EB7E8B-B50C-4CB2-B1E2-45FAC889B8EB%2012.png)
 
 User1 creates a new Azure AD tenant named external.contoso.onmicrosoft.com. You need to create new user accounts in external.contoso.onmicrosoft.com.
 
@@ -868,7 +868,7 @@ What should you do **first**?
 ## Topic2/Question39
 You have an Azure subscription that contains a resource group named TestRG. You use TestRG to validate an Azure deployment.
 TestRG contains the following resources:
-![](AZ104%20dump/0009100001%2020.png)
+![](AZ104%20dump/0009100001%2021.png)
 You need to delete TestRG.
 What should you do first?
 * A. Modify the backup configurations of VM1 and modify the resource lock type of VNET1
@@ -915,23 +915,23 @@ You have an Azure Active Directory (Azure AD) tenant that has the contoso.onmicr
 You have a domain name of contoso.com registered at a third-party registrar.
 You need to ensure that you can create Azure AD users that have names containing a suffix of @contoso.com.
 Which three actions should you perform in sequence? 
-![](AZ104%20dump/3C70DC05-A84E-486E-A794-849AFF295C5D%2020.png)
+![](AZ104%20dump/3C70DC05-A84E-486E-A794-849AFF295C5D%2021.png)
 
 ## Topic2/Question44
 You have an Azure subscription that contains a storage account named storage1. The subscription is linked to an Azure Active Directory (Azure AD) tenant named contoso.com that syncs to an on-premises Active Directory domain.
 The domain contains the security principals shown in the following table.
-![](AZ104%20dump/0009600001%2020.png)
+![](AZ104%20dump/0009600001%2021.png)
 
 In Azure AD, you create a user named User2.
 The storage1 account contains a file share named share1 and has the following configurations.
 
-![](AZ104%20dump/0009600002%2020.png)
+![](AZ104%20dump/0009600002%2021.png)
 
 For each of the following statements, select Yes if the statement is true. Otherwise, select No.
 
-![](AZ104%20dump/0009700001%203.png)
+![](AZ104%20dump/0009700001%204.png)
 
-![](AZ104%20dump/B21351ED-C95E-47CF-8530-EC3B332AE022%2020.png)
+![](AZ104%20dump/B21351ED-C95E-47CF-8530-EC3B332AE022%2021.png)
 
 > note that Storage File Data SMB Share contributor, Reader and so on is RBAC role. Role Based Access Control of Azure.  
 > Azure RBAC is designed to assigned to users, groups, or service principles.  
@@ -949,21 +949,21 @@ For each of the following statements, select Yes if the statement is true. Other
 You have an Azure subscription named Subscription1 that contains a virtual network VNet1.
 You add the users in the following table.
 
-![](AZ104%20dump/0009700003%2020.png)
+![](AZ104%20dump/0009700003%2021.png)
 
 Which user can perform each configuration? 
 
-![](AZ104%20dump/0009900001%2020.jpg)
+![](AZ104%20dump/0009900001%2021.jpg)
 
 ## Topic2/Question46
 You have the Azure resources shown on the following exhibit.
 
-![](AZ104%20dump/0010000001%2020.jpg)
+![](AZ104%20dump/0010000001%2021.jpg)
 
 You plan to track resource usage and prevent the deletion of resources.
 To which resources can you apply locks and tags? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/0010200001%2020.png)
+![](AZ104%20dump/0010200001%2021.png)
 
 ## Topic2/Question47
 You have an Azure Active Directory (Azure AD) tenant.
@@ -994,11 +994,11 @@ What should you use?
 ## Topic2/Question54
 You configure the custom role shown in the following exhibit.
 
-![](AZ104%20dump/0011200001%2010.png)
+![](AZ104%20dump/0011200001%2011.png)
 
-![](AZ104%20dump/1978EAB8-3810-41A7-B659-F693B90C8A60%2010.png)
+![](AZ104%20dump/1978EAB8-3810-41A7-B659-F693B90C8A60%2011.png)
 
-![](AZ104%20dump/DCE77554-FEAB-4E05-89B4-4BD2AE43EBB6%2010.png)
+![](AZ104%20dump/DCE77554-FEAB-4E05-89B4-4BD2AE43EBB6%2011.png)
 
 
 ## Topic2/Question55
@@ -1025,7 +1025,7 @@ What should you do first?
 ## Topic2/Question78
 You have an Azure subscription that contains the resources shown in the following table.
 
-![](AZ104%20dump/image657%208.png)
+![](AZ104%20dump/image657%209.png)
 
 You need to assign User1 the **Storage File Data SMB Share Contributor** role for share1.
 
@@ -1038,15 +1038,15 @@ What should you do first?
 ## Topic2/Question57
 You have an Azure subscription that contains the hierarchy shown in the following exhibit.
 
-![](AZ104%20dump/0011800001%2012.png)
+![](AZ104%20dump/0011800001%2013.png)
 
 You create an Azure Policy definition named Policy1.
 To which Azure resources can you assign Policy1 and which Azure resources can you specify as exclusions from Policy1? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/0011900002%2012.png)
+![](AZ104%20dump/0011900002%2013.png)
 
 > Note: Azure provides four levels of scope: management groups, subscriptions, resource groups, and resources  
-![](AZ104%20dump/0012000001%2012.png)
+![](AZ104%20dump/0012000001%2013.png)
 
 
 ## Topic2/Question61
@@ -1079,14 +1079,14 @@ Does this meet the goal?
 ## Topic2/Question66
 You have an Azure subscription that is linked to an Azure AD tenant. The tenant contains the custom role-based access control (RBAC) roles shown in the following table.
 
-![](AZ104%20dump/image567%209.png)
+![](AZ104%20dump/image567%2010.png)
 
 From the Azure portal, you need to create two custom roles named Role3 and Role4. Role3 will be an `Azure subscription role`. Role4 will be an `Azure AD role`.
 Which roles can you clone to create the new roles? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/image568%203.png)
+![](AZ104%20dump/image568%204.png)
 
-![](AZ104%20dump/D94CC330-EC82-46F1-B3A6-0CD66E0CD56C%209.png)
+![](AZ104%20dump/D94CC330-EC82-46F1-B3A6-0CD66E0CD56C%2010.png)
 
 ## Topic2/Question67
 You have an Azure subscription named Sub1 that contains two users named User1 and User2.
@@ -1097,7 +1097,7 @@ You need to assign role-based access control (RBAC) roles to User1 and User2. Th
 The solution must use the principle of least privilege.
 Which RBAC role should you assign to each user? To answer, drag the appropriate roles to the correct users. Each role may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.
 
-![](AZ104%20dump/52EA8847-1A9E-4C6B-A71A-797594FD9C07%209.png)
+![](AZ104%20dump/52EA8847-1A9E-4C6B-A71A-797594FD9C07%2010.png)
 
 ## Topic2/Question68
 You have an Azure subscription that contains 10 virtual machines, a key vault named Vault1, and a network security group (NSG) named NSG1. All the resources are deployed to the East US Azure region.
@@ -1110,8 +1110,8 @@ What should you configure as the destination of the outbound security rule for N
 * B. a service tag ✔️
 * C. an IP address range
 
-![](AZ104%20dump/BD92A9BC-901D-4344-88D4-44D027BB43F8%208.png)
-![](AZ104%20dump/8F462051-A34C-4C8B-AF09-2C5208AF312F%208.png)
+![](AZ104%20dump/BD92A9BC-901D-4344-88D4-44D027BB43F8%209.png)
+![](AZ104%20dump/8F462051-A34C-4C8B-AF09-2C5208AF312F%209.png)
 
 > “AzureKeyVault” tag can be used in outbound NSGs.  
 >   
@@ -1122,11 +1122,11 @@ What should you configure as the destination of the outbound security rule for N
 ## Topic2/Question69
 You have an Azure AD tenant named adatum.com that contains the groups shown in the following table.
 
-![](AZ104%20dump/image572%208.png)
+![](AZ104%20dump/image572%209.png)
 
 Adatum.com contains the users shown in the following table.
 
-![](AZ104%20dump/image573%208.png)
+![](AZ104%20dump/image573%209.png)
 
 You assign the Azure Active Directory Premium Plan 2 license to Group1 and User4.
 Which users are assigned the Azure Active Directory Premium Plan 2 license?
@@ -1143,14 +1143,14 @@ You have an Azure AD tenant named contoso.com.
 You have two external partner organizations named fabrikam.com and litwareinc.com. Fabrikam.com is configured as a connected organization.
 You create an access package as shown in the Access package exhibit. (Click the Access package tab.)
 
-![](AZ104%20dump/image574%208.png)
+![](AZ104%20dump/image574%209.png)
 
 You configure the external user lifecycle settings as shown in the Lifecycle exhibit. (Click the Lifecycle tab.)
 
-![](AZ104%20dump/image575%208.png)
+![](AZ104%20dump/image575%209.png)
 
 For each of the following statements, select Yes if the statement is true. Otherwise, select No.
-![](AZ104%20dump/image576%208.png)
+![](AZ104%20dump/image576%209.png)
 - NNY
 
 > Litwareinc.com is not connected organization.  
@@ -1160,24 +1160,24 @@ For each of the following statements, select Yes if the statement is true. Other
 ## Topic2/Question72
 You have an Azure subscription that contains the users shown in the following table.
 
-![](AZ104%20dump/image627%208.png)
+![](AZ104%20dump/image627%209.png)
 
 The groups are configured as shown in the following table.
 
-![](AZ104%20dump/image628%208.png)
+![](AZ104%20dump/image628%209.png)
 
 You have a resource group named RG1 as shown in the following exhibit.
 
-![](AZ104%20dump/image629%208.png)
+![](AZ104%20dump/image629%209.png)
 
 
-![](AZ104%20dump/image631%208.png)
+![](AZ104%20dump/image631%209.png)
 
 ## Topic2/Question74
 Your on-premises network contains a VPN gateway.
 You have an Azure subscription that contains the resources shown in the following table.
 
-![](AZ104%20dump/image646%208.png)
+![](AZ104%20dump/image646%209.png)
 
 You need to ensure that all the traffic from VM1 to storage1 **travels across the Microsoft backbone network.**
 What should you configure?
@@ -1194,18 +1194,18 @@ What should you configure?
 ## Topic2/Question75
 You have an Azure subscription that contains a user named User1 and the resources shown in the following table.
 
-![](AZ104%20dump/image647%208.png)
+![](AZ104%20dump/image647%209.png)
 
 NSG1 is associated to networkinterface1.
 User1 has role assignments for NSG1 as shown in the following table.
 
-![](AZ104%20dump/image648%208.png)
+![](AZ104%20dump/image648%209.png)
 
 For each of the following statements, select Yes if the statement is true. Otherwise, select No.
 
-![](AZ104%20dump/image650%208.png)
+![](AZ104%20dump/image650%209.png)
 
-![](AZ104%20dump/5F41D52C-5F4E-4C0C-B9D8-9703334269E6%208.png)
+![](AZ104%20dump/5F41D52C-5F4E-4C0C-B9D8-9703334269E6%209.png)
 
 ## Topic2/Question77
 You have three Azure subscriptions named Sub1, Sub2, and Sub3 that are linked to an Azure AD tenant.
@@ -1221,7 +1221,7 @@ You create the following role assignments for MG1:
 **You assign User1 the Virtual Machine Contributor role for Sub1 and Sub2.**
 
 
-![](AZ104%20dump/image655%203.png)
+![](AZ104%20dump/image655%204.png)
 
 - YYN
 
@@ -1234,9 +1234,9 @@ You need to use AzCopy to copy data to the blob storage and file storage in stor
 
 Which authentication method should you use for each type of storage? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/image692%208.png)
+![](AZ104%20dump/image692%209.png)
 
-![](AZ104%20dump/539F131A-1C09-4472-8C3F-10537C602F32%2010.png)
+![](AZ104%20dump/539F131A-1C09-4472-8C3F-10537C602F32%2012.png)
 
 ## Topic3/Question24/Azure Storage
 You have an Azure Storage account named storage1.
@@ -1255,7 +1255,7 @@ Which storage services should you identify?
 You have an Azure Storage account named storage1 that uses Azure Blob storage and Azure File storage.
 You need to use AzCopy to copy data to the blob storage and file storage in storage1.
 Which authentication method should you use for each type of storage? To answer, select the appropriate options in the answer area.
-![](AZ104%20dump/0018700001%206.png)
+![](AZ104%20dump/0018700001%207.png)
 
 - Box 1: Both Azure Active Directory (AD) and Shared Access Signature (SAS) token are supported for Blob storage.
 - Box 2: Only Shared Access Signature (SAS) token is supported for File storage.
@@ -1276,33 +1276,33 @@ What should you use?
 
 ## Topic3/Question32/Azure Storage
 You have an Azure subscription that contains the storage accounts shown in the following exhibit.
-![](AZ104%20dump/0019600001%206.png)
+![](AZ104%20dump/0019600001%207.png)
 
 Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
-![](AZ104%20dump/0019700001%206.png)
+![](AZ104%20dump/0019700001%207.png)
 
 - Box1: contoso104 only
 - Box2: contoso101, contoso102, and contoso103
 	- Access tier is supported for blob data.
 	- Hot > Cool > Cold > Archive tier
 	- File Storage does not support blob data.
-![](AZ104%20dump/30A691EE-F21D-43C0-9DFB-2243BEF88BAE%206.png)
+![](AZ104%20dump/30A691EE-F21D-43C0-9DFB-2243BEF88BAE%207.png)
 
 ## Topic3/Question42/Azure Storage
 You have an Azure Storage account named storage1 that contains a blob container. The blob container has a default access tier of Hot. Storage1 contains a container named container1.
 You create lifecycle management rules in storage1 as shown in the following table.
-![](AZ104%20dump/0020800001%205.png)
+![](AZ104%20dump/0020800001%206.png)
 
 You perform the actions shown in the following table.
-![](AZ104%20dump/0020900001%205.png)
+![](AZ104%20dump/0020900001%206.png)
 
 For each of the following statements, select Yes if the statement is true. Otherwise, select No.
 
-![](AZ104%20dump/0020900002%205.jpg)
+![](AZ104%20dump/0020900002%206.jpg)
 
 - NYY
 
-![](AZ104%20dump/D8467396-C949-4657-A49B-E8AD65A836B5%205.png)
+![](AZ104%20dump/D8467396-C949-4657-A49B-E8AD65A836B5%206.png)
 
 
 ## Topic3/Question44/Azure Storage
@@ -1310,7 +1310,7 @@ You have an Azure Storage account named storage1 that stores images.
 You need to create a new storage account and replicate the images in storage1 to the new account by using object replication.
 How should you configure the new account?
 
-![](AZ104%20dump/0021100001%205.jpg)
+![](AZ104%20dump/0021100001%206.jpg)
 
 - Box1: StorageV2 or BlobStorage only
 - Box2: Container
@@ -1322,7 +1322,7 @@ How should you configure the new account?
 
 ## Topic3/Question47/Azure Storage
 You have an Azure subscription that contains the storage accounts shown in the following table.
-![](AZ104%20dump/0020200001%205.png)
+![](AZ104%20dump/0020200001%206.png)
 
 You plan to manage the data stored in the accounts by using lifecycle management rules.
 To which storage accounts can you apply lifecycle management rules?
@@ -1342,12 +1342,12 @@ To which storage accounts can you apply lifecycle management rules?
 ## Topic3/Question62/Azure Storage
 You have an Azure subscription that contains the storage accounts shown in the following table.
 
-![](AZ104%20dump/image640%203.png)
+![](AZ104%20dump/image640%204.png)
 
 You need to identify which storage accounts support lifecycle management, and which storage accounts support moving data to the Archive access tier.
 
 Which storage accounts should you use? 
-![](AZ104%20dump/image641%203.png)
+![](AZ104%20dump/image641%204.png)
 
 - Box1 - storage1, storage2, storage3
 - Box2 - storage2 	
@@ -1356,14 +1356,14 @@ Which storage accounts should you use?
 ## Topic3/Question40/Azure Storage
 You have an Azure subscription that contains a storage account named storage1.
 You have the devices shown in the following table.
-![](AZ104%20dump/0020700001%206.png)
+![](AZ104%20dump/0020700001%207.png)
 From which devices can you use AzCopy to copy data to storage1?
 * A. Device 1 only
 * B. Device1, Device2 and Device3 ✔️
 * C. Device1 and Device2 only
 * D. Device1 and Device3 only
 
-![](AZ104%20dump/892339FE-4AEF-4FDA-BD73-62A301F8E967%206.png)
+![](AZ104%20dump/892339FE-4AEF-4FDA-BD73-62A301F8E967%207.png)
 
 ## Topic3/Question45/Azure Storage
 You have an on-premises server that contains a folder named D:\Folder1.
@@ -1376,16 +1376,16 @@ Which command should you run?
 
 ## Topic3/Question47/Azure Storage
 You have an Azure subscription that contains the storage accounts shown in the following table.
-![](AZ104%20dump/0021400001%206.png)
+![](AZ104%20dump/0021400001%207.png)
 You plan to use AzCopy to copy a blob from container1 directly to share1.
 You need to identify which authentication method to use when you use AzCopy. What should you identify for each account? 
 
-![](AZ104%20dump/0021500001%206.jpg)
+![](AZ104%20dump/0021500001%207.jpg)
 
 - Box1: SAS token
 - Box2: SAS token
 
-![](AZ104%20dump/539F131A-1C09-4472-8C3F-10537C602F32%2011.png)
+![](AZ104%20dump/539F131A-1C09-4472-8C3F-10537C602F32%2013.png)
 
 ## Topic3/Question52
 You have an Azure subscription that contains a storage account named storage1. The storage1 account contains a container named container1.
@@ -1394,7 +1394,7 @@ You need to create a lifecycle management rule for storage1 that will automatica
 
 How should you complete the rule?
 
-![](AZ104%20dump/image585%203.png)
+![](AZ104%20dump/image585%204.png)
 
 - Box1: tierToArchive
 - Box2: prefixMatch
@@ -1403,7 +1403,7 @@ How should you complete the rule?
 ## Topic2/Question88
 You have an Azure subscription that contains the resources shown in the following table.
 
-![](AZ104%20dump/image695%208.png)
+![](AZ104%20dump/image695%209.png)
 
 You need to assign Workspace1 a role to allow read, write, and delete operations for the data stored in the containers of storage1.
 Which role should you assign?
@@ -1427,7 +1427,7 @@ Which two roles should you configure for storage1? Each correct answer presents 
 >   
 > Storage Account Contributor has no DataActions, thus no ability to upload any files.  
 
-![](AZ104%20dump/68B7638E-E73A-406F-A113-A66B4C8B36D1%206.png)
+![](AZ104%20dump/68B7638E-E73A-406F-A113-A66B4C8B36D1%207.png)
 
 
 ## Topic2/Question91
@@ -1436,16 +1436,16 @@ You need to create a Microsoft 365 group that contains only members of a marketi
 
 How should you complete the dynamic membership rule? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/image698%207.png)
+![](AZ104%20dump/image698%208.png)
 
 ## Topic3/Question2
 You have Azure Storage accounts as shown in the following exhibit.
-![](AZ104%20dump/0014100001%207.jpg)
+![](AZ104%20dump/0014100001%208.jpg)
 Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
 
-![](AZ104%20dump/0014200001%207.jpg)
+![](AZ104%20dump/0014200001%208.jpg)
 
-![](AZ104%20dump/0014200002%207.jpg)
+![](AZ104%20dump/0014200002%208.jpg)
 
 ## Topic3/Question4
 You have an Azure Storage account named storage1.
@@ -1456,7 +1456,7 @@ You need to ensure that App1 and App2 can read blobs from storage1. The solution
 
 What should you configure in storage1 for each app? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/0014500001%207.jpg)
+![](AZ104%20dump/0014500001%208.jpg)
 
 - Box 1: Access Control (IAM)
 Since the App1 uses Managed Identity, App1 can access the Storage Account via IAM. As per requirement, we need to minimize the number of secrets used, thus Access keys is not ideal.
@@ -1472,7 +1472,7 @@ You need to back up VM1. The solution must ensure that backups are stored across
 
 Which **three actions should you perform in sequence**? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.
 
-![](AZ104%20dump/image587%203.png)
+![](AZ104%20dump/image587%204.png)
 
 1. Create Recovery Services Vault,
 2. Set Replication Policy to ZRS (because of the requirement for having in three separate zones)
@@ -1481,11 +1481,11 @@ Which **three actions should you perform in sequence**? To answer, move the appr
 ## Topic3/Question53
 You have an Azure subscription that contains the resources shown in the following table.
 
-![](AZ104%20dump/image589%203.png)
+![](AZ104%20dump/image589%204.png)
 
 You need to perform the tasks shown in the following table.
 
-![](AZ104%20dump/image590%203.png)
+![](AZ104%20dump/image590%204.png)
 
 Which tasks can you perform by using Azure Storage Explorer?
 * A. Task1 and Task3 only
@@ -1503,9 +1503,9 @@ You need to create an Azure Storage account that meets the following requirement
 
 How should you complete the command? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/0014700004%207.jpg)
+![](AZ104%20dump/0014700004%208.jpg)
 
-![](AZ104%20dump/0014800001%207.jpg)
+![](AZ104%20dump/0014800001%208.jpg)
 
 - General Purpose v1 (GPv1) accounts do not support tiering, while General Purpose v2 (GPv2) accounts do.
 
@@ -1516,11 +1516,11 @@ How should you complete the command? To answer, select the appropriate options i
 ## Topic3/Question7
 You have an Azure subscription that contains the resources shown in the following table.
 
-![](AZ104%20dump/0015000001%207.png)
+![](AZ104%20dump/0015000001%208.png)
 
 The status of VM1 is Running.
 You assign an Azure policy as shown in the exhibit. (Click the Exhibit tab.)
-![](AZ104%20dump/0015100001%207.jpg)
+![](AZ104%20dump/0015100001%208.jpg)
 
 You assign the policy by using the following parameters:
 - Microsoft.ClassicNetwork/virtualNetworks
@@ -1528,7 +1528,7 @@ You assign the policy by using the following parameters:
 - Microsoft.Compute/virtualMachines
 For each of the following statements, select Yes if the statement is true. Otherwise, select No.
 
-![](AZ104%20dump/0015200001%207.png)
+![](AZ104%20dump/0015200001%208.png)
 
 - No - You cannot move a resource into a RG if the resource is restricted in the destination RG
 - No - The VM will not become deallocated, it will instead be marked as non-compliant
@@ -1541,9 +1541,9 @@ You have an Azure subscription named Subscription1.
 You create an Azure Storage account named contosostorage, and then you create a file share named data.
 Which UNC path should you include in a script that references files from the data file share? To answer, drag the appropriate values to the correct targets. 
 
-![](AZ104%20dump/0015700001%207.jpg)
+![](AZ104%20dump/0015700001%208.jpg)
 
-![](AZ104%20dump/0015800001%207.jpg)
+![](AZ104%20dump/0015800001%208.jpg)
 
 ## Topic3/Question11
 You have an Azure subscription that contains an Azure Storage account.
@@ -1551,9 +1551,9 @@ You plan to copy an on-premises virtual machine image to a container named vmima
 You need to create the container for the planned image.
 Which command should you run? 
 
-![](AZ104%20dump/0016000001%207.png)
+![](AZ104%20dump/0016000001%208.png)
 
-![](AZ104%20dump/0016100001%207.png)
+![](AZ104%20dump/0016100001%208.png)
 - Similar to OS Images, a VM Image is a collection of metadata and pointers to a set of VHDs (one VHD per disk) stored as page blobs in Azure Storage.
 
 ## Topic3/Question16
@@ -1577,7 +1577,7 @@ Which two actions should you perform? Each correct answer presents part of the s
 
 ## Topic3/Question15/StorageRedundancy
 You have an Azure subscription that contains the storage accounts shown in the following table.
-![](AZ104%20dump/0016900001%207.png)
+![](AZ104%20dump/0016900001%208.png)
 You need to identify which storage account can be converted to zone-redundant storage (ZRS) replication by requesting a live migration from Azure support.
 What should you identify?
 * A. storage1 
@@ -1586,8 +1586,8 @@ What should you identify?
 * D. storage4
 
 > ZRS currently supports standard general-purpose v2, FileStorage and BlockBlobStorage storage account types.  
-![](AZ104%20dump/D41838F1-0B77-4D74-89F6-11D56AE0332A%206.png)
-![](AZ104%20dump/68653C04-3CDC-4546-A8AB-F9E3B15762C9%206.png)
+![](AZ104%20dump/D41838F1-0B77-4D74-89F6-11D56AE0332A%207.png)
+![](AZ104%20dump/68653C04-3CDC-4546-A8AB-F9E3B15762C9%207.png)
 
 ## Topic3/Question18/StorageRedundancy
 You plan to create an Azure Storage account in the Azure region of East US 2. You need to create a storage account that meets the following requirements:
@@ -1595,9 +1595,9 @@ You plan to create an Azure Storage account in the Azure region of East US 2. Yo
 - ✑ Remains available if a single data center in the region fails.
 
 How should you configure the storage account? To answer, select the appropriate options in the answer area.
-![](AZ104%20dump/0017400003%207.png)
+![](AZ104%20dump/0017400003%208.png)
 
-![](AZ104%20dump/0017500001%207.png)
+![](AZ104%20dump/0017500001%208.png)
 
 - **ZRS supported by StorageV2**
 
@@ -1643,10 +1643,10 @@ How should you configure storage?
 ## Topic3/Question23/StorageRedundancy
 You have an Azure subscription.
 You create the Azure Storage account shown in the following exhibit.
-![](AZ104%20dump/0018300001%206.jpg)
+![](AZ104%20dump/0018300001%207.jpg)
 Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
 
-![](AZ104%20dump/0018400001%206.png)
+![](AZ104%20dump/0018400001%207.png)
 - Box1: 3
 - Box2: Access tier
 
@@ -1656,13 +1656,13 @@ Use the drop-down menus to select the answer choice that completes each statemen
 
 ## AzureFileSync/Question1
 You have Azure subscription that includes following Azure file shares:
-![](AZ104%20dump/0015500001%207.png)
+![](AZ104%20dump/0015500001%208.png)
 
 You have the following on-premises servers:
-![](AZ104%20dump/0015500002%207.png)
+![](AZ104%20dump/0015500002%208.png)
 
 you create a **Storage Sync Service** named Sync1 and an **Azure File Sync Group** named Group1. Group1 uses shares1 as a **cloud endpoint**. You register Server1 and Server2 in Sync1. You add D:\Folder1 on Server1 as a **server endpoint** of Group1.
-![](AZ104%20dump/0015600001%207.jpg)
+![](AZ104%20dump/0015600001%208.jpg)
 
 - Box 1: No
 A sync group contains one cloud endpoint, or Azure file share, and at least one server endpoint.
@@ -1670,15 +1670,15 @@ A sync group contains one cloud endpoint, or Azure file share, and at least one 
 Azure File Sync does not support more than one server endpoint from the same server in the same Sync Group.
 - Box 3: Yes
 Multiple server endpoints can exist on the same volume if their namespaces are not overlapping (for example, F:\sync1 and F:\sync2) and each endpoint is syncing to a unique sync group.
-![](AZ104%20dump/254ADF06-1536-4940-8AAA-BE4ABF243BE0%207.png)
+![](AZ104%20dump/254ADF06-1536-4940-8AAA-BE4ABF243BE0%208.png)
 
 ## Topic3/Question17/AzureFileSync
 You have an on-premises file server named Server1 that runs Windows Server 2016. You have an Azure subscription that contains an Azure file share. You deploy an **Azure File Sync Storage** Sync Service, and you create a sync group. You need to synchronize files from Server1 to Azure. 
 Which three actions should you perform in sequence?
 
-![](AZ104%20dump/0017200001%207.png)
+![](AZ104%20dump/0017200001%208.png)
 
-![](AZ104%20dump/0017300001%203.png)
+![](AZ104%20dump/0017300001%204.png)
 
 1. Prepare Windows Server to use with Azure File Sync
 2. Deploy the Storage Sync Service
@@ -1692,7 +1692,7 @@ Which three actions should you perform in sequence?
 You have an Azure subscription that contains an Azure file share. You have an on-premises server named Server1 that runs Windows Server 2016. You plan to set up Azure File Sync between Server1 and the Azure file share. You need to prepare the subscription for the planned Azure File Sync.
 Which two actions should you perform **in the Azure subscription**?
 
-![](AZ104%20dump/0019100001%206.png)
+![](AZ104%20dump/0019100001%207.png)
 
 - Box1: Create a Storage Sync Service
 - Box2: Create a sync group
@@ -1701,7 +1701,7 @@ Which two actions should you perform **in the Azure subscription**?
 ## Topic3/Question6/AzureFileSync
 You have an Azure subscription that contains the resources in the following table.
 
-![](AZ104%20dump/0014900001%207.png)
+![](AZ104%20dump/0014900001%208.png)
 
 Store1 contains a file share named data. Data contains 5,000 files.
 You need to synchronize the files in the file share named data to an on-premises server named Server1.
@@ -1715,11 +1715,11 @@ Which **three actions** should you perform?
 
 ## Topic3/Question12/AzureFileSync
 You have an Azure File sync group that has the endpoints shown in the following table.
-![](AZ104%20dump/0016100002%207.png)
+![](AZ104%20dump/0016100002%208.png)
 Cloud tiering is enabled for Endpoint3.
 You add a file named File1 to Endpoint1 and a file named File2 to Endpoint2.
 On which endpoints will File1 and File2 be available **within 24 hours** of adding the files? To answer, select the appropriate options in the answer area.
-![](AZ104%20dump/0016200001%207.jpg)
+![](AZ104%20dump/0016200001%208.jpg)
 
 - File1: Endpoint1 only
 It is a cloud endpoint, and it is scanned by the detection job every 24 hours.
@@ -1734,10 +1734,10 @@ With the on-premises servers the file is scanned and synced automatically after 
 
 ## Topic3/Question30/AzureFileSync
 You have an Azure subscription that contains the file shares shown in the following table.
-![](AZ104%20dump/0019200001%206.png)
+![](AZ104%20dump/0019200001%207.png)
 
 You have the on-premises file shares shown in the following table.
-![](AZ104%20dump/0019200002%206.png)
+![](AZ104%20dump/0019200002%207.png)
 
 You create an Azure file sync group named Sync1 and perform the following actions:
 - ✑ Add share1 as the cloud endpoint for Sync1.
@@ -1746,26 +1746,26 @@ You create an Azure file sync group named Sync1 and perform the following action
 
 For each of the following statements, select Yes if the statement is true. Otherwise, select No.
 
-![](AZ104%20dump/0019300001%206.jpg)
+![](AZ104%20dump/0019300001%207.jpg)
 
 - NYN
 
 - sync group can have only 1 cloud endpoint and multiple server endpoints.
 - data3 can not be a server endpoint since it is not registered.
 
-![](AZ104%20dump/B44D6130-9E35-4E59-A86B-E9F4D8BF3B22%206.png)
+![](AZ104%20dump/B44D6130-9E35-4E59-A86B-E9F4D8BF3B22%207.png)
 
 
 ## Topic3/Question14/AzureFileSync
 You have a sync group named Sync1 that has a cloud endpoint. The cloud endpoint includes a file named File1.txt.
 Your on-premises network contains servers that run Windows Server 2016. The servers are configured as shown in the following table.
 
-![](AZ104%20dump/0016700001%206.png)
+![](AZ104%20dump/0016700001%207.png)
 
 You add Share1 as an endpoint for Sync1. One hour later, you add Share2 as an endpoint for Sync1.
 For each of the following statements, select Yes if the statement is true. Otherwise, select No.
 
-![](AZ104%20dump/0016700002%208.jpg)
+![](AZ104%20dump/0016700002%2010.jpg)
 
 - NNY
 - Azure File Sync never overrides any files on endpoint
@@ -1773,7 +1773,7 @@ For each of the following statements, select Yes if the statement is true. Other
 ## Question1 - Azure Import/Export
 you have an Azure subscription named Subscription1 that contains the storage accounts shown in the following table:
 
-![](AZ104%20dump/7431EE03-F8CD-4898-B203-D48C9FD426B1%207.png)
+![](AZ104%20dump/7431EE03-F8CD-4898-B203-D48C9FD426B1%208.png)
 
 you plan to use the Azure Import/Export service to export data from Subscription1. You need to identify which storage account can be used to export the data.
 what should you identify?
@@ -1782,12 +1782,12 @@ what should you identify?
 - C. storage3
 - D. storage4  ✔️
 
-![](AZ104%20dump/0401CCE2-D4A5-497E-91FB-8E9ED003FCFD%207.png)
+![](AZ104%20dump/0401CCE2-D4A5-497E-91FB-8E9ED003FCFD%208.png)
 
 ## Question2 - Azure Import/Export
 You have Azure subscription that includes data in following locations:
 
-![](AZ104%20dump/99FCB776-4232-40FA-A22A-2F2814C64660%207.png)
+![](AZ104%20dump/99FCB776-4232-40FA-A22A-2F2814C64660%208.png)
 
 You plan to export data by using Azure import/export job named Export1.
 You need to identify the data that can be exported by using Export1.
@@ -1801,7 +1801,7 @@ which data should you identify?
 ## Question3 - Azure Import/Export
 You have an Azure subscription that contains a storage account. You have an on-premises server named Server1 that runs Windows Server 2016. Sever 1 has 2 TB of data. You need to transfer the data to the storage account by using the Azure Import/Export service. In which order should you perform the actions?
 
-![](AZ104%20dump/0011400001%206.png)
+![](AZ104%20dump/0011400001%207.png)
 
 - answer: 1 > 2 > 3 > 4
 
@@ -1834,12 +1834,12 @@ What can you use as the destination of the imported data?
 
 ## Topic3/Question21/RecoveryServiceVault
 You have an Azure subscription named Subscription1 that contains the resources shown in the following table.
-![](AZ104%20dump/0017800001%207.png)
+![](AZ104%20dump/0017800001%208.png)
 
 In storage1, you create a blob container named blob1 and a file share named share1.
 Which resources can be backed up to Vault1 and Vault2? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/0017900001%207.png)
+![](AZ104%20dump/0017900001%208.png)
 
 - Box 1: VM1 only
 VM1 is in the same region as Vault1. File1 is not in the same region as Vault1. SQL is not in the same region as Vault1. Blobs cannot be backup up to service vaults.
@@ -1877,7 +1877,7 @@ What should you do first?
 You need to the appropriate sizes for the Azure virtual for Server2. 
 What should you do? To answer, select the appropriate options in the answer area. 
 
-![](AZ104%20dump/371B5A0C-3EDA-42FE-A82D-D5BB5DB04635%207.png)
+![](AZ104%20dump/371B5A0C-3EDA-42FE-A82D-D5BB5DB04635%208.png)
 
 
 ## Topic3/Question20/RecoveryServiceVault
@@ -1891,12 +1891,12 @@ What should you do first?
 
 ## Topic3/Question31/Azure Backup report
 You have an Azure subscription named Subscription1 that contains the resources shown in the following table:
-![](AZ104%20dump/0019400001%206.png)
+![](AZ104%20dump/0019400001%207.png)
 
 You plan to configure Azure Backup reports for Vault1.
 You are configuring the Diagnostics settings for the AzureBackupReports log.
 Which storage accounts and which Log Analytics workspaces can you use for the Azure Backup reports of Vault1? To answer, select the appropriate options in the answer area.
-![](AZ104%20dump/0019500001%206.jpg)
+![](AZ104%20dump/0019500001%207.jpg)
 
 - Box1: storage3 only
 	- it resides in the same region as vault1 (West Europe)
@@ -1905,10 +1905,10 @@ Which storage accounts and which Log Analytics workspaces can you use for the Az
 
 ## Topic4/Question40/RecoveryServiceVault
 You have an Azure subscription named Subscription1 that contains the resources shown in the following table.
-![](AZ104%20dump/0028300005%206.png)
+![](AZ104%20dump/0028300005%207.png)
 
 You create virtual machines in Subscription1 as shown in the following table.
-![](AZ104%20dump/0028400001%206.png)
+![](AZ104%20dump/0028400001%207.png)
 
 You plan to use Vault1 for the backup of as many virtual machines as possible.
 Which virtual machines can be backed up to Vault1?
@@ -1922,7 +1922,7 @@ Which virtual machines can be backed up to Vault1?
 
 ## Topic6/Question3/RecoveryServiceVault
 You have the Azure virtual machines shown in the following table:
-![](AZ104%20dump/0053100001%206.png)
+![](AZ104%20dump/0053100001%207.png)
 
 You have a Recovery Services vault that protects VM1 and VM2.
 You need to protect VM3 and VM4 by using Recovery Services.
@@ -1935,10 +1935,10 @@ What should you do first?
 ## Topic3/Question39
 You have an Azure subscription that contains an Azure Storage account named storageaccount1.
 You export storageaccount1 as an Azure Resource Manager template. The template contains the following sections.
-![](AZ104%20dump/0020500001.jpg)
+![](AZ104%20dump/0020500001%202.jpg)
 
 For each of the following statements, select Yes if the statement is true. Otherwise, select No.
-![](AZ104%20dump/0020600001.png)
+![](AZ104%20dump/0020600001%202.png)
 
 - YYN
 
@@ -1947,13 +1947,13 @@ For each of the following statements, select Yes if the statement is true. Other
 
 ## Topic4/Question5
 You have an Azure subscription named Subscription1. Subscription1 contains the resources in the following table.
-![](AZ104%20dump/0023300001%203.png)
+![](AZ104%20dump/0023300001%204.png)
 
 VNet1 is in RG1. VNet2 is in RG2. There is no connectivity between VNet1 and VNet2.
 An administrator named Admin1 creates an Azure virtual machine named VM1 in RG1. VM1 uses a disk named Disk1 and connects to VNet1. Admin1 then installs a custom application in VM1.
 You need to move the custom application to VNet2. The solution must minimize administrative effort.
 Which two actions should you perform? 
-![](AZ104%20dump/0023400001%203.png)
+![](AZ104%20dump/0023400001%204.png)
 
 - Box1 : delete vm1
 - Box2 : create a new virtual machine
@@ -1969,14 +1969,14 @@ Vnet간 통신하면 더 간단하게 해결 가능함
 
 ## Topic4/Question7
 You have the App Service plans shown in the following table.
-![](AZ104%20dump/0023600001%203.png)
+![](AZ104%20dump/0023600001%204.png)
 
 You plan to create the Azure web apps shown in the following table.
-![](AZ104%20dump/0023700001%203.png)
+![](AZ104%20dump/0023700001%204.png)
 
 You need to identify which App Service plans can be used for the web apps.
 What should you identify? 
-![](AZ104%20dump/0023700002%203.png)
+![](AZ104%20dump/0023700002%204.png)
 
 
 > The region in which your app runs is the region of the App Service plan it’s in  
@@ -2004,7 +2004,7 @@ You onboard 10 Azure virtual machines to Azure Automation State Configuration.
 You need to use Azure Automation State Configuration to manage the ongoing consistency of the virtual machine configurations.
 Which **three actions** should you perform in sequence? 
 
-![](AZ104%20dump/0024500001%203.jpg)
+![](AZ104%20dump/0024500001%204.jpg)
 
 answer:
 1. Upload a configuration to Azure Automation State Configuration
@@ -2023,18 +2023,18 @@ Step 6: Check the compliance status of a managed node
 ## Topic4/Question12
 You have an Azure Resource Manager template named Template1 that is used to deploy an Azure virtual machine.
 Template1 contains the following text:
-![](AZ104%20dump/0024700001.png)
+![](AZ104%20dump/0024700001%202.png)
 
 The variables section in Template1 contains the following text:
 “location”: “westeurope”
 The resources section in Template1 contains the following text:
-![](AZ104%20dump/0024700002.png)
+![](AZ104%20dump/0024700002%202.png)
 
 You need to deploy the virtual machine to the West US location by using Template1.
 What should you do?
-* A. Modify the location in the resources section to westus
+* A. Modify the location in the resources section to westus ✔️
 * B. Select West US during the deployment
-* C. Modify the location in the variables section to westus ✔️
+* C. Modify the location in the variables section to westus 
 
 > westus is allowed value.  
 > location in variables section is overridden by location in resources section.  
@@ -2051,23 +2051,23 @@ What should you do first?
 
 
 > premium 플랜에서 staging slots 추가 가능  
-![](AZ104%20dump/90A53BF4-083F-4771-A2FD-0F612939B6A4%203.png)
+![](AZ104%20dump/90A53BF4-083F-4771-A2FD-0F612939B6A4%204.png)
 
 
 ## Topic4/Question22
 You create a virtual machine scale set named Scale1. Scale1 is configured as shown in the following exhibit.
-![](AZ104%20dump/0016600001%203.jpg)
+![](AZ104%20dump/0016600001%204.jpg)
 
 Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
 
-![](AZ104%20dump/0016700001%203.jpg)
+![](AZ104%20dump/0016700001%204.jpg)
 
-![](AZ104%20dump/0016700002%209.jpg)
+![](AZ104%20dump/0016700002%2011.jpg)
 
 
 ## Topic4/Question31
 You plan to create the Azure web apps shown in the following table.
-![](AZ104%20dump/0026900001%203.jpg)
+![](AZ104%20dump/0026900001%204.jpg)
 
 What is the minimum number of App Service plans you should create for the web apps?
 * A. 1
@@ -2104,12 +2104,12 @@ What should you do first?
 * D. Stop webapp1.
 
 > You should use CNAME records for all custom DNS names except root domains (for example, contoso.com). For root domains, use A records.  
-![](AZ104%20dump/AB9E640C-BBCB-42D6-8D07-4D803CF777C2%203.png)
+![](AZ104%20dump/AB9E640C-BBCB-42D6-8D07-4D803CF777C2%204.png)
 
 
 ## Topic4/Question20
 You have an Azure subscription that contains the resources shown in the following table.
-![](AZ104%20dump/0025300001%203.png)
+![](AZ104%20dump/0025300001%204.png)
 
 VM1 connects to VNET1.
 You need to connect VM1 to VNET2. what should you do?
@@ -2125,17 +2125,17 @@ You need to connect VM1 to VNET2. what should you do?
 
 ## Topic4/Question23
 You have an Azure subscription named Subscription1 that contains the quotas shown in the following table.
-![](AZ104%20dump/0025700001%203.png)
+![](AZ104%20dump/0025700001%204.png)
 
 You deploy virtual machines to Subscription1 as shown in the following table.
-![](AZ104%20dump/0025700002%203.png)
+![](AZ104%20dump/0025700002%204.png)
 
 You plan to deploy the virtual machines shown in the following table.
-![](AZ104%20dump/0025700003%203.png)
+![](AZ104%20dump/0025700003%204.png)
 
 For each of the following statements, select Yes if the statement is true. Otherwise, select No.
 
-![](AZ104%20dump/0025800001%203.jpg)
+![](AZ104%20dump/0025800001%204.jpg)
 
 - YNN
 
@@ -2144,12 +2144,12 @@ For each of the following statements, select Yes if the statement is true. Other
 
 ## Topic4/Question24
 You have an Azure subscription that contains an Azure Availability Set named WEBPROD-AS-USE2 as shown in the following exhibit.
-![](AZ104%20dump/0025900001%203.png)
+![](AZ104%20dump/0025900001%204.png)
 
 You add 14 virtual machines to WEBPROD-AS-USE2.
 Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
 
-![](AZ104%20dump/0026000001%203.png)
+![](AZ104%20dump/0026000001%204.png)
 
 - Box 1: 2
 - Box 2: 7
@@ -2158,17 +2158,17 @@ The 14 VMs are shared across the 10 update domains, so 4 update domains will hav
 Only one update domain is rebooted at a time.
 - Maximum Down = 2
 - Minimum Down = 1
-![](AZ104%20dump/83B6B2A7-3EAC-4FEF-9FFB-F55E9E4BD675%203.png)
+![](AZ104%20dump/83B6B2A7-3EAC-4FEF-9FFB-F55E9E4BD675%204.png)
 
 There are 2 fault domains. The 14 VMs are shared across the 2 fault domains, so 7 VMs in each fault domain. A rack failure will affect one fault domain so 7 VMs will be offline.14 VM in 2 Fault Domain.
 - Maximum Down = 7
 - Minimum Down = 7
-![](AZ104%20dump/66BF1793-35C1-4492-8D63-54F13FD7A5F9%203.png)
+![](AZ104%20dump/66BF1793-35C1-4492-8D63-54F13FD7A5F9%204.png)
 
 
 ## Topic4/Question25
 You deploy an Azure Kubernetes Service (AKS) cluster named Cluster1 that uses the IP addresses shown in the following table.
-![](AZ104%20dump/0026200001%203.png)
+![](AZ104%20dump/0026200001%204.png)
 
 You need to provide internet users with access to the applications that run in Cluster1.
 Which IP address should you include in the DNS record for Cluster1?
@@ -2193,13 +2193,13 @@ What should you identify?
 
 ## Topic4/Question27
 You plan to deploy an Azure container instance by using the following Azure Resource Manager template.
-![](AZ104%20dump/0026400001%203.png)
+![](AZ104%20dump/0026400001%204.png)
 
 Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the template.
 
-![](AZ104%20dump/0026500001%203.jpg)
+![](AZ104%20dump/0026500001%204.jpg)
 
-![](AZ104%20dump/0026500002%203.jpg)
+![](AZ104%20dump/0026500002%204.jpg)
 
 > No Access restrictions are specified.  
 > The “restartPolicy” is set as “OnFailure”.  
@@ -2219,13 +2219,13 @@ Which changes will be lost after you redeploy VM1?
 * C. the new files on drive D ✔️
 * D. the new files on drive C
 
-![](AZ104%20dump/6FA5F3E5-D64C-47EA-8FF5-736F9BD0A1AC.png)
+![](AZ104%20dump/6FA5F3E5-D64C-47EA-8FF5-736F9BD0A1AC%202.png)
 > drive D is temporary storage  
 
 ## Topic4/Question88
 You have an Azure subscription.
 You plan to deploy the Azure container instances shown in the following table.
-![](AZ104%20dump/3816EFDB-C202-42D4-918F-A86DF062DA7D.png)
+![](AZ104%20dump/3816EFDB-C202-42D4-918F-A86DF062DA7D%202.png)
 
 Which instances can you deploy to a container group?
 * A. Instance1 only
@@ -2256,7 +2256,7 @@ Which change will cause downtime for VM1?
 You have an app named App1 that runs on an Azure web app named webapp1.
 The developers at your company upload an update of App1 to a Git repository named Git1.
 Webapp1 has the deployment slots shown in the following table.
-![](AZ104%20dump/0026700001%203.png)
+![](AZ104%20dump/0026700001%204.png)
 
 You need to ensure that the App1 update is tested before the update is made available to users.
 Which **two actions** should you perform? Each correct answer presents part of the solution.
@@ -2309,17 +2309,17 @@ What should you do?
 
 ## Topic4/Question33
 You have a pay-as-you-go Azure subscription that contains the virtual machines shown in the following table.
-![](AZ104%20dump/0027000001%203.png)
+![](AZ104%20dump/0027000001%204.png)
 
 You create the budget shown in the following exhibit.
-![](AZ104%20dump/0027100001%203.jpg)
+![](AZ104%20dump/0027100001%204.jpg)
 
 The AG1 action group contains a user named admin@contoso.com only.
 Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
 
-![](AZ104%20dump/0027200001%203.jpg)
+![](AZ104%20dump/0027200001%204.jpg)
 
-![](AZ104%20dump/0027200002%203.jpg)
+![](AZ104%20dump/0027200002%204.jpg)
 
 ## Topic4/Question34
 You have an Azure subscription named Subscription1. Subscription1 contains a resource group named RG1. RG1 contains resources that were deployed by using templates.
@@ -2332,7 +2332,7 @@ Does this meet the goal?
 
 ## Topic4/Question36
 You have an Azure Active Directory (Azure AD) tenant named adatum.com that contains the users shown in the following table.
-![](AZ104%20dump/0027500001%203.png)
+![](AZ104%20dump/0027500001%204.png)
 
 Adatum.com has the following configurations:
 - ✑ Users may join devices to Azure AD is set to User1.
@@ -2352,13 +2352,13 @@ Which users are members of the local Administrators group?
 ## Topic4/Question37
 You have Azure subscriptions named Subscription1 and Subscription2.
 Subscription1 has following resource groups:
-![](AZ104%20dump/0027600001%203.png)
+![](AZ104%20dump/0027600001%204.png)
 
 RG1 includes a web app named App1 in the West Europe location.
 Subscription2 contains the following resource groups:
-![](AZ104%20dump/0027600002%203.png)
+![](AZ104%20dump/0027600002%204.png)
 
-![](AZ104%20dump/0027700001%203.jpg)
+![](AZ104%20dump/0027700001%204.jpg)
 
 - NYY
 
@@ -2386,21 +2386,21 @@ After Policy1 is assigned, you create a storage account that has the following c
 You need to identify which tags are assigned to each resource.
 What should you identify? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/0027900005%203.jpg)
+![](AZ104%20dump/0027900005%204.jpg)
 
-![](AZ104%20dump/0028000001%203.jpg)
+![](AZ104%20dump/0028000001%204.jpg)
 
 ## Topic4/Question39
 You have an Azure subscription named Subscription1.
 In Subscription1, you create an alert rule named Alert1.
 The Alert1 action group is configured as shown in the following exhibit.
 
-![](AZ104%20dump/0028100001%203.jpg)
+![](AZ104%20dump/0028100001%204.jpg)
 
 Alert1 alert criteria triggered every minute.
 Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
 
-![](AZ104%20dump/0028200001%203.png)
+![](AZ104%20dump/0028200001%204.png)
 
 - Box 1: 60
 One alert per minute will trigger one email per minute.
@@ -2448,7 +2448,7 @@ What should you **do first**?
 
 ## Topic4/Question43
 You have an Azure subscription that contains the resources shown in the following table.
-![](AZ104%20dump/0028600001%203.png)
+![](AZ104%20dump/0028600001%204.png)
 
 You need to configure a proximity placement group for VMSS1.
 Which proximity placement groups should you use?
@@ -2484,11 +2484,11 @@ The Linux diagnostic extension helps a user monitor the health of a Linux VM run
 You have an Azure subscription named Subscription1. Subscription1 contains a virtual machine named VM1.
 You install and configure a web server and a DNS server on VM1.
 VM1 has the effective network security rules shown in the following exhibit:
-![](AZ104%20dump/0029000001%203.jpg)
+![](AZ104%20dump/0029000001%204.jpg)
 
 Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
 
-![](AZ104%20dump/0029100001%203.png)
+![](AZ104%20dump/0029100001%204.png)
 
 - Box 1:
 Rule2 blocks ports 50-60, which includes port 53, the DNS port. Internet users can reach to the Web server, since it uses port 80.
@@ -2542,10 +2542,10 @@ What should you use?
 
 ## Topic4/Question53
 You deploy an Azure Kubernetes Service (AKS) cluster that has the network profile shown in the following exhibit.
-![](AZ104%20dump/0029500003%203.png)
+![](AZ104%20dump/0029500003%204.png)
 
 Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
-![](AZ104%20dump/0029600001%203.jpg)
+![](AZ104%20dump/0029600001%204.jpg)
 
 - Box 1: 10.244.0.0/16
 The Pod CIDR, because containers live inside Pods.
@@ -2565,7 +2565,7 @@ which solution meet the goal?
 
 ## Topic4/Question74
 You have an Azure subscription named Subscription1 that contains the resources shown in the following table.
-![](AZ104%20dump/0033000001%203.png)
+![](AZ104%20dump/0033000001%204.png)
 
 Subscription1 also includes a virtual network named VNET2. VM1 connects to a virtual network named VNET2 by using a network interface named NIC1.
 You need to create a new network interface named NIC2 for VM1.
@@ -2575,11 +2575,11 @@ which solution meet the goal? (yes or no 문제를 합쳐놓은 것임)
 - Solution: You create NIC2 in RG2 and West US. ✔️
 
 > NIC 와 VM의 region이 동일해야 함.  
-![](AZ104%20dump/78B1D435-4FB3-4BA6-9B97-D91412890757%203.png)
+![](AZ104%20dump/78B1D435-4FB3-4BA6-9B97-D91412890757%204.png)
 
 ## Topic4/Question90
 You have an Azure subscription that has the public IP addresses shown in the following table.
-![](AZ104%20dump/image653%203.png)
+![](AZ104%20dump/image653%204.png)
 
 You plan to deploy an Instance of Azure Firewall Premium named FW1.
 Which IP addresses can you use?
@@ -2592,7 +2592,74 @@ Which IP addresses can you use?
 > - IP address version: IPv4  
 > - SKU: Standard  
 > - Assignment: Static  
-![](AZ104%20dump/3B5175B4-3ACB-48C7-AE49-3A0F763A47DF%203.png)
+![](AZ104%20dump/3B5175B4-3ACB-48C7-AE49-3A0F763A47DF%204.png)
+
+
+You have an on-premises network that contains a database server named dbserver1. You have an Azure subscription. You plan to deploy three Azure virtual machines. Each virtual machine will be deployed to a separate availability zone. You need to configure an Azure VPN gateway for a site-to-site VPN. The solution must ensure that the virtual machines can connect to dbserver1. Which type of public IP address SKU and assignment should you use for the gateway? 
+
+- A. a basic SKU and a static IP address assignment 
+- B. a standard SKU and a static IP address assignment  ✔️
+- C. a basic SKU and a dynamic IP address assignment
+
+You have an Azure subscription that uses the public IP addresses shown in the following table.
+![](AZ104%20dump/1C80E36F-564C-4060-8854-2F7E04E14A1E.png)
+
+You need to create a public Azure Standard Load Balancer. Which public IP addresses can you use?
+
+- A. IPI and IP3 only 
+- B. IP1, IP2, and IP3 
+- C. IP2 only 
+- D. IP3 only ✔️
+
+## Topic5/Question73
+You manage a virtual network named VNet1 that is hosted in the West US Azure region.
+VNet1 hosts two virtual machines named VM1 and VM2 that run Windows Server.
+You need to inspect all the network traffic from VM1 to VM2 for a period of three hours.
+- Solution: From Azure Network Watcher, you create a packet capture. ✔️
+- Solution: From Azure Network Watcher, you create a connection monitor. No
+- Solution: From Azure Monitor, you create a metric on Network In and Network Out.
+
+Does this meet the goal?
+
+## Topic5/Question76
+You have an Azure subscription that contains the resources shown in the following table.
+![](AZ104%20dump/0046800001.png)
+
+You need to load balance HTTPS connections to vm1 and vm2 by using lb1.
+Which three actions should you perform in sequence? ![](AZ104%20dump/0046900001.jpg)
+
+
+![](AZ104%20dump/0047000001.jpg)
+
+## Topic5/Question76
+You have an app named App1 that is installed on two Azure virtual machines named VM1 and VM2. Connections to App1 are managed by using an Azure Load
+Balancer.
+The effective network security configurations for VM2 are shown in the following exhibit.
+![](AZ104%20dump/0047200001.jpg)
+
+You discover that connections to App1 from 131.107.100.50 over TCP port 443 fail.
+You verify that the Load Balancer rules are configured correctly.
+You need to ensure that connections to App1 can be established successfully from 131.107.100.50 over TCP port 443.
+- Solution: You create an inbound security rule that denies all traffic from the 131.107.100.50 source and has a priority of 64999.
+- Solution: You create an inbound security rule that allows any traffic from the AzureLoadBalancer source and has a cost of 150. ✔️
+- Solution: You delete the BlockAllOther443 inbound security rule.
+
+Does this meet the goal?
+
+> By placing a rule with the priority 150 that allows the AzureLoadBalancer traffic tag, VM2 is discovered as functional/healthy, the LB directs traffic to it   
+>   
+> When an Azure Load Balancer get created, it will probe backend to detect if the backend service is healthy or not, the probe packet is sent from source address “AzureLoadBalancer”, the IP address of “AzureLoadBalancer” is always 168.63.129.16.   
+> What is happening here is the LB Health Probe of TCP 443 to VM1 & VM2 are getting blocked by Rule 200 so it thinks both VM1 and VM2 are down. Hence App1 is failing as the LB won’t direct any 443 traffic anywhere as it considers all Hosts are down.  
+> Make a new rule above 200 or move rule 65001 up to <200, so the Health Probe will start working again, it will find a health host and start to direct 443 traffic from 131.107.100.50 to it. App1 is alive!  
+
+## Topic5/Question79
+You have an Azure subscription that contains two on-premises locations named site1 and site2.
+You need to connect site1 and site2 by using an Azure Virtual WAN.
+Which four actions should you perform in sequence? 
+
+![](AZ104%20dump/0047300001.jpg)
+
+![](AZ104%20dump/0047300002.jpg)
 
 ## Topic5/Question2
 Your company has three offices. The offices are located in Miami, Los Angeles, and New York. Each office contains datacenter.
@@ -2604,19 +2671,20 @@ What should you create?
 * C. three virtual WANs and one virtual hub 
 * D. three On-premises data gateways and one Azure Application Gateway
 
-![](AZ104%20dump/E4EBBDD8-4A19-4AB3-B42B-0B807334DECA%203.png)
-![](AZ104%20dump/6662D196-72DF-43CB-AC31-24DA3D22F402%203.png)
+![](AZ104%20dump/E4EBBDD8-4A19-4AB3-B42B-0B807334DECA%204.png)
+![](AZ104%20dump/6662D196-72DF-43CB-AC31-24DA3D22F402%204.png)
 
 ## Topic5/Question4
 You have an Azure subscription that contains the resources shown in the following table.
-![](AZ104%20dump/0035200001%203.png)
+![](AZ104%20dump/0035200001%204.png)
 
 LB1 is configured as shown in the following table.
-![](AZ104%20dump/0035200002%203.png)
+![](AZ104%20dump/0035200002%204.png)
 
 You plan to create new inbound NAT rules that meet the following requirements:
 - ✑ Provide Remote Desktop access to VM1 from the internet by using port 3389.
 - ✑ Provide Remote Desktop access to VM2 from the internet by using port 3389.
+
 What should you create on LB1 before you can create the new inbound NAT rules?
 * A. a frontend IP address ✔️
 * B. a load balancing rule 
@@ -2637,28 +2705,28 @@ What should you do?
 
 ## Topic4/Question68
 You have an Azure subscription that contains the resources shown in the following table.
-![](AZ104%20dump/0032200001%203.png)
+![](AZ104%20dump/0032200001%204.png)
 
 In Azure Cloud Shell, you need to create a virtual machine by using an Azure Resource Manager (ARM) template.
 How should you complete the command? To answer, select the appropriate options in the answer area.
-![](AZ104%20dump/0032300001%203.png)
+![](AZ104%20dump/0032300001%204.png)
 
-![](AZ104%20dump/0032300002%203.jpg)
+![](AZ104%20dump/0032300002%204.jpg)
 
 ## Topic3/Question50
 You have an Azure subscription.
 You plan to deploy a storage account named storage1 by using the following Azure Resource Manager (ARM) template.
-![](AZ104%20dump/image582%203.png)
+![](AZ104%20dump/image582%204.png)
 For each of the following statements, select Yes if the statement is true. Otherwise, select No.
-![](AZ104%20dump/CC154187-1CFE-432C-AD1B-AC7DCE935216%203.png)
+![](AZ104%20dump/CC154187-1CFE-432C-AD1B-AC7DCE935216%204.png)
 - NNY
 
 ## Topic5/Question30
 You plan to create an Azure virtual machine named VM1 that will be configured as shown in the following exhibit.
-![](AZ104%20dump/0039100001%203.png)
+![](AZ104%20dump/0039100001%204.png)
 
 The planned disk configurations for VM1 are shown in the following exhibit.
-![](AZ104%20dump/0039200001%203.jpg)
+![](AZ104%20dump/0039200001%204.jpg)
 
 You need to ensure that VM1 can be created in an Availability Zone.
 Which two settings should you modify? Each correct answer presents part of the solution.
@@ -2686,12 +2754,12 @@ What should you do first?
 You have an Azure virtual machine named VM1 and a Recovery Services vault named Vault1.
 You create a backup policy named Policy1 as shown in the exhibit. 
 
-![](AZ104%20dump/0053600001%206.jpg)
+![](AZ104%20dump/0053600001%207.jpg)
 
 You configure the backup of VM1 to use Policy1 on Thursday, January 1 at 1:00 AM.
 You need to identify the number of available recovery points for VM1. How many recovery points are available on January 8 and January 15? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/0053700001%206.jpg)
+![](AZ104%20dump/0053700001%207.jpg)
 
 - 6, 8
 
@@ -2700,11 +2768,11 @@ You need to identify the number of available recovery points for VM1. How many r
 ## Topic6/Question49/RecoveryServiceVault
 You create a Recovery Services vault backup policy named Policy1 as shown in the following exhibit:
 
-![](AZ104%20dump/image752%206.png)
+![](AZ104%20dump/image752%207.png)
 
 Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
 
-![](AZ104%20dump/image753%206.png)
+![](AZ104%20dump/image753%207.png)
 
 - 10 years and 36 months
 
@@ -2714,7 +2782,7 @@ You create a virtual machine named VM1 in Subscription1. VM1 is not protected by
 You need to protect VM1 by using Azure Backup. Backups must be created at 01:00 and stored for 30 days.
 What should you do? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/0056200001%206.jpg)
+![](AZ104%20dump/0056200001%207.jpg)
 
 - Box 1: A Recovery Services vault
 - Box 2: A backup policy
@@ -2724,8 +2792,8 @@ You have an Azure Linux virtual machine that is protected by Azure Backup.
 One week ago, two files were deleted from the virtual machine.
 You need to restore the deleted files to an on-premises Windows Server 2016 computer as quickly as possible.
 Which **four actions** should you perform in sequence? 
-![](AZ104%20dump/0055700001%203.png)
-![](AZ104%20dump/0055800001%203.png)
+![](AZ104%20dump/0055700001%204.png)
+![](AZ104%20dump/0055800001%204.png)
 
  
 ## Topic6/Question18
@@ -2765,7 +2833,7 @@ What should you use?
 
 ## Topic5/Question7
 You have the Azure virtual networks shown in the following table.
-![](AZ104%20dump/0035700001.png)
+![](AZ104%20dump/0035700001%202.png)
 
 To which virtual networks can you establish a peering connection from VNet1?
 * A. VNet2 andVNet3 only
@@ -2803,7 +2871,7 @@ Which **three actions** should you perform? Each correct answer presents part of
 
 ## Topic5/Question11
 You have an Azure subscription that contains the resources in the following table.
-![](AZ104%20dump/0036300001.png)
+![](AZ104%20dump/0036300001%202.png)
 
 To which subnets can you apply NSG1?
 * A. the subnets on VNet1 only
@@ -2816,15 +2884,15 @@ To which subnets can you apply NSG1?
 
 ## Topic5/Question13
 You have an Azure subscription that contains the resource groups shown in the following table.
-![](AZ104%20dump/0036600001.png)
+![](AZ104%20dump/0036600001%202.png)
 
 RG1 contains the resources shown in the following table.
-![](AZ104%20dump/0036600002.png)
+![](AZ104%20dump/0036600002%202.png)
 
 VM1 is running and connects to NIC1 and Disk1. NIC1 connects to VNET1.
 RG2 contains a public IP address named IP2 that is in the East US location. IP2 is not assigned to a virtual machine.
 For each of the following statements, select Yes if the statement is true. Otherwise, select No.
-![](AZ104%20dump/0036700001.jpg)
+![](AZ104%20dump/0036700001%202.jpg)
 - YYN
 > resource를 다른 리소스 그룹으로 이동한다고해서 해당 리소스의 region이 변경되는 것은 아님.  
 
@@ -2842,7 +2910,7 @@ What should you do?
 ## Topic5/Question15
 You create an Azure VM named VM1 that runs Windows Server 2019.
 VM1 is configured as shown in the exhibit. (Click the Exhibit tab.)
-![](AZ104%20dump/0036900001.jpg)
+![](AZ104%20dump/0036900001%202.jpg)
 You need to enable Desired State Configuration for VM1.
 What should you do first?
 * A. Connect to VM1.
@@ -2872,17 +2940,17 @@ Does this meet the goal?
 
 ## Topic5/Question20
 You have a virtual network named VNet1 that has the configuration shown in the following exhibit.
-![](AZ104%20dump/0037500001.jpg)
+![](AZ104%20dump/0037500001%202.jpg)
 
 Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.
 
-![](AZ104%20dump/0037600001.png)
+![](AZ104%20dump/0037600001%202.png)
 - Box 1: Add an address space
 - Box 2: Add subnet
 
 ## Topic5/Question22
 You have an Azure subscription that contains the resources shown in the following table.
-![](AZ104%20dump/0037900001.png)
+![](AZ104%20dump/0037900001%202.png)
 
 The Not allowed resource types Azure policy that has policy enforcement enabled is assigned to RG1 and uses the following parameters:
 Microsoft.Network/virtualNetworks
@@ -2922,9 +2990,9 @@ What should you create and configure?
 * D. an Azure Event Hub 
 
 ## case study1
-![](AZ104%20dump/BEB6A9DF-372A-4279-8E7F-3151311A5528.png)
-![](AZ104%20dump/DF0E302B-283B-4F6D-A7A9-1BDD4B6B13C7.png)
-![](AZ104%20dump/81FE87E0-A69C-4881-A2BC-875790F7B48D.png)
+![](AZ104%20dump/BEB6A9DF-372A-4279-8E7F-3151311A5528%202.png)
+![](AZ104%20dump/DF0E302B-283B-4F6D-A7A9-1BDD4B6B13C7%202.png)
+![](AZ104%20dump/81FE87E0-A69C-4881-A2BC-875790F7B48D%202.png)
 
 ### question1
 You discover that VM3 does NOT meet the technical requirements. 
@@ -2941,11 +3009,11 @@ What should you use?
 
 You need to meet the connection requirements for the New York office. What should you do? To answer, select the appropriate options in the answer area.
 
-![](AZ104%20dump/0051000001%203.png)
+![](AZ104%20dump/0051000001%204.png)
 
-![](AZ104%20dump/0051100001%207.png)
+![](AZ104%20dump/0051100001%208.png)
 
-![](AZ104%20dump/340D9D4D-8FA4-4D7C-A9A9-1EE65A880C8D.png)
+![](AZ104%20dump/340D9D4D-8FA4-4D7C-A9A9-1EE65A880C8D%202.png)
 
 > A Site-to-Site VPN gateway connection is used to connect your on-premises network to an Azure virtual network over an IPsec/IKE (IKEv1 or IKEv2) VPN tunnel. This type of connection requires a VPN device located on-premises that has an externally facing public IP address assigned to it. **Site-to-Site VPN connection requires Virtual network gateway, Local network gateway and Gateway Subnet.**  
 
@@ -2953,9 +3021,9 @@ You need to meet the connection requirements for the New York office. What shoul
 You need to implement Role1. 
 Which command should you run before you create Role1? 
 
-![](AZ104%20dump/0058900009%203.png)
+![](AZ104%20dump/0058900009%204.png)
 
-![](AZ104%20dump/0058900010%203.png)
+![](AZ104%20dump/0058900010%204.png)
 
 ### question 4
 You need to recommend a solution to automate the configuration for the finance department users. The solution must meet the technical requirements. What should you include in the recommended? 
@@ -2966,32 +3034,32 @@ You need to recommend a solution to automate the configuration for the finance d
 - D. dynamic groups and conditional access policies ✔️
 
 ## case study2
-![](AZ104%20dump/D5ED1E6C-C4FF-4FFC-B678-35D51239EF6A.png)
-![](AZ104%20dump/9355665A-CD57-4212-90AE-E2CA2E91D02D.png)
-![](AZ104%20dump/BA99FC82-45FA-4EEA-992E-C699F2A91F20.png)
-![](AZ104%20dump/B07A5B34-B60C-4C53-81E4-D8E58680244D.png)
+![](AZ104%20dump/D5ED1E6C-C4FF-4FFC-B678-35D51239EF6A%202.png)
+![](AZ104%20dump/9355665A-CD57-4212-90AE-E2CA2E91D02D%202.png)
+![](AZ104%20dump/BA99FC82-45FA-4EEA-992E-C699F2A91F20%202.png)
+![](AZ104%20dump/B07A5B34-B60C-4C53-81E4-D8E58680244D%202.png)
 
 ### question1
 You need to ensure that User1 can create initiative definitions, and User4 can assign initiatives to RG2. The solution must meet the technical requirements. Which role should you assign to each user?
-![](AZ104%20dump/6AB50572-490B-42C4-8B6E-61E1A475BA7F.png)
+![](AZ104%20dump/6AB50572-490B-42C4-8B6E-61E1A475BA7F%202.png)
 - Box1: Resource Policy Contributor for Sub1
 - Box2: Resource Policy Contributor for RG2
 
 ### question2
 You need to create container1 and share1.
 Which storage accounts should you use for each resource? 
-![](AZ104%20dump/1C3D98C9-67AE-4302-9CCB-54AFA681D083.png)
+![](AZ104%20dump/1C3D98C9-67AE-4302-9CCB-54AFA681D083%202.png)
 - Box1: storage2 and storage3 only
 - Box2: storage2 only
 
 > cool tier 지원하는 스토리지를 먼저 찾아야함.  
-![](AZ104%20dump/1137C7B0-52B8-4704-9E6F-3F3034856AB1.png)
+![](AZ104%20dump/1137C7B0-52B8-4704-9E6F-3F3034856AB1%202.png)
 
 ### question3
-![](AZ104%20dump/5F808ADD-4708-4D5B-9954-8BD63752F4E6.png)
+![](AZ104%20dump/5F808ADD-4708-4D5B-9954-8BD63752F4E6%202.png)
 You need to create storage5. The solution must support the planned changes.
 Which type of storage account should you use, and which account should you configure as the destination storage account?
-![](AZ104%20dump/27995972-FBBA-4C63-AC06-73A675BE0185.png)
+![](AZ104%20dump/27995972-FBBA-4C63-AC06-73A675BE0185%202.png)
 - Box1: StorageV2 (general purpose v2)
 - Box2: Storage2
 
@@ -3001,7 +3069,7 @@ object replication is supported for
 
 ### question4
 You implement the planned changes for NSG1 and NSG2.
-![](AZ104%20dump/0052300001.png)
+![](AZ104%20dump/0052300001%202.png)
 - YYN
 
 > Rule 200 blocks RDP traffic  
@@ -3038,13 +3106,13 @@ Which storage account should you identify?
 - Retention is available only if you use General Purpose v2 Storage accounts (GPv2).
 
 ## case study3 
-![](AZ104%20dump/B2BB7197-C8E6-4698-AEFE-3E23F7939E73.png)
-![](AZ104%20dump/944A327C-9C4E-4887-8765-4B59AD2B16F9.png)
-![](AZ104%20dump/3EE99199-8416-4A8D-B390-65B5B7DDDDAD.png)
+![](AZ104%20dump/B2BB7197-C8E6-4698-AEFE-3E23F7939E73%202.png)
+![](AZ104%20dump/944A327C-9C4E-4887-8765-4B59AD2B16F9%202.png)
+![](AZ104%20dump/3EE99199-8416-4A8D-B390-65B5B7DDDDAD%202.png)
 
 ### question1
 You need to identify the storage requirements for Contoso.
-![](AZ104%20dump/0022000001.jpg)
+![](AZ104%20dump/0022000001%202.jpg)
 - YNN
 > requirement says “move existing blueprint files to Azure Blob Storage”  
 
@@ -3079,8 +3147,8 @@ You need to configure the Device settings to meet the technical requirements and
 Which two settings should you modify? 
 
 answer area:
-![](AZ104%20dump/6DAD6E53-DFAC-4D56-9E4E-D200DFF5F410.png)
-![](AZ104%20dump/DF2BAA9E-9311-402E-8553-D08546FC66E3.png)
+![](AZ104%20dump/6DAD6E53-DFAC-4D56-9E4E-D200DFF5F410%202.png)
+![](AZ104%20dump/DF2BAA9E-9311-402E-8553-D08546FC66E3%202.png)
 
 ### question6
 You need to recommend an identity solution that meets the technical requirements.
